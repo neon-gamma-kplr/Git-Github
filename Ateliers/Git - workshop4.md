@@ -28,7 +28,7 @@ Vous travaillez sur un projet web avec votre binôme. Vous avez créé un dépô
 10. Créez une branche et publiez la.
 11. Ajoutez du text au fichier *chat.html.
 12. Ajoutez le fichier a l'index Git.
-13. Commitez les modifications avec le message "Message de Binome 2".
+13. Commitez les modifications avec le message "Ajout du text - Binome 2".
 14. Poussez le dernier commit.
 15. Créez un Pull Request.
 
