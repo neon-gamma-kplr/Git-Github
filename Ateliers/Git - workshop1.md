@@ -7,7 +7,7 @@ Apprendre comment commettre des changements dans des dépôts Git.
 
 1. Créez votre compte GitHub
 2. Configurer Git.
-3. Créez un nouveau répertoire sur votre ordinateur local.
+3. Créez un nouveau répertoire sur votre machine.
 4. Transformez-le en dépôt Git.
 5. Créez un nouveau fichier nommé "file" contenant le texte "hello commit".
 6. Ajoutez le fichier "file" a l'index Git.
