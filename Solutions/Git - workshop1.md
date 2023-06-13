@@ -5,15 +5,39 @@ Apprendre comment commettre des changements dans des dépôts Git.
 
 ## Instructions
 
-1. Créez votre compte Github en visitant le lien suivant : [GitHub](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
-2. Configurer Git.
+### 1. Créez votre compte Github en visitant le lien suivant : [GitHub](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)
+
+### 2. Configurer Git.
+
 ```
 git config --global user.name "Votre nom d'utilisateur"
 git config --global user.email "Votre adresse e-mail"
 ```
-Configurer le nom d'utilisateur et l'adresse e-mail pour les commits Git. Lorsque vous effectuez un commit Git, ces informations sont incluses pour que les autres développeurs sachent qui a effectué le commit et comment les contacter si nécessaire.
 
-3. Créez un nouveau répertoire.
+La commande `git config --global user.name "Votre nom d'utilisateur"` vous permet de définir votre nom d'utilisateur. Remplacez "Votre nom d'utilisateur" par votre nom d'utilisateur réel.
+
+La commande `git config --global user.email "Votre adresse e-mail"` vous permet de définir votre adresse e-mail. Remplacez "Votre adresse e-mail" par votre adresse e-mail réelle.
+
+Assurez-vous de remplacer les valeurs entre guillemets par vos propres informations. Une fois que vous avez exécuté ces commandes, votre nom d'utilisateur et votre adresse e-mail seront configurés globalement dans Git.
+
+### 3. Vérifier que la configuration de votre nom d'utilisateur et de votre adresse e-mail a été effectuée avec succès. 
+
+Vous pouvez utiliser la commande `git config --global --list` pour afficher la liste des paramètres de configuration globale de Git, y compris votre nom d'utilisateur et votre adresse e-mail.
+
+Exécutez la commande suivante dans votre terminal :
+
+```
+git config --global --list
+```
+
+Cela affichera une liste des paramètres de configuration globale, y compris votre nom d'utilisateur et votre adresse e-mail, si vous les avez configurés correctement.
+
+Assurez-vous de rechercher les lignes contenant **`user.name` et `user.email`** dans la sortie de la commande pour confirmer que vos informations de configuration sont correctement enregistrées.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/2fe54518-acb9-4214-acac-8fcf51071f14)
+
+
+### 3. Créez un nouveau répertoire.
 ```
 mkdir <nom_repo> && cd <nom_repo>
 ```
