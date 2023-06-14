@@ -50,6 +50,7 @@ Créez un fichier Python vide dans le dossier :
 ```
 $ touch gestion_eleves.py
 ```
+
 ### 4. Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
 
 ```
@@ -60,15 +61,21 @@ La commande `git add .` est utilisée pour ajouter le fichier `gestion_eleves.py
 
 ### 5. Création d'un premier commit pour le fichier `gestion_eleves.py`
 
+La commande "git commit -m 'Initial commit'" est utilisée pour créer un nouveau commit dans le référentiel Git. Un commit est une capture instantanée des modifications apportées aux fichiers du projet à un moment précis.
+
 ```
 git commit -m "Initial commit"
 ```
 
 ### 6. Pousser le changement vers le dépot distant 
 
+La commande "git push" est utilisée pour pousser (envoyer) les commits locaux vers un référentiel distant, généralement situé sur une plateforme de gestion de code telle que GitHub, GitLab ou Bitbucket.
+
 ```
 git push 
 ```
+
+Lorsque vous exécutez cette commande, Git compare les commits locaux que vous avez effectués avec ceux présents dans le référentiel distant. Il envoie uniquement les nouveaux commits locaux qui n'existent pas encore dans le référentiel distant
 
 ### 4. Création de la nouvelle branche ajouter_eleve
 
@@ -164,11 +171,16 @@ Résultat de l'exécution de la commande :
   ```
 
 - Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
+
 ### . Pousser le fichier gestion_eleves.py vers la branche ajouter_eleve
+
+Pour pousser votre branche nommée "ajouter_eleve" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
 
 ```
 git push origin ajouter_eleve
 ```
+
+Cette commande va pousser les commits de votre branche locale "ajouter_eleve" vers la branche "ajouter_eleve" du dépôt distant appelé "origin". 
 
 ### 10. Basculer vers la branche principale 
 
@@ -289,6 +301,16 @@ Résultat de l'exécution de la commande :
 
 - Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
 
+### . Pousser le fichier gestion_eleves.py vers la branche modifier_eleve
+
+Pour pousser votre branche nommée "modifier_eleve" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
+
+```
+git push origin modifier_eleve
+```
+
+Cette commande va pousser les commits de votre branche locale "modifier_eleve" vers la branche "modifier_eleve" du dépôt distant appelé "origin". 
+
 ### 20. Basculer vers la branche principale 
 
 La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
@@ -406,6 +428,16 @@ Résultat de l'exécution de la commande :
 
 - Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
 
+### . Pousser le fichier gestion_eleves.py vers la branche supprimer_eleve
+
+Pour pousser votre branche nommée "supprimer_eleve" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
+
+```
+git push origin supprimer_eleve
+```
+
+Cette commande va pousser les commits de votre branche locale "supprimer_eleve" vers la branche "supprimer_eleve" du dépôt distant appelé "origin". 
+
 ### 28. Basculer vers la branche principale 
 
 La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
@@ -522,6 +554,16 @@ Résultat de l'exécution de la commande :
   ```
 
 - Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
+
+### . Pousser le fichier gestion_eleves.py vers la branche afficher_tous_les_élèves
+
+Pour pousser votre branche nommée "afficher_tous_les_élèves" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
+
+```
+git push origin afficher_tous_les_élèves
+```
+
+Cette commande va pousser les commits de votre branche locale "afficher_tous_les_élèves" vers la branche "afficher_tous_les_élèves" du dépôt distant appelé "origin". 
 
 ### 36. Basculer vers la branche principale 
 
@@ -659,6 +701,16 @@ Résultat de l'exécution de la commande :
 
 - Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
 
+### . Pousser le fichier gestion_eleves.py vers la branche gestion_eleves
+
+Pour pousser votre branche nommée "gestion_eleves" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
+
+```
+git push origin gestion_eleves
+```
+
+Cette commande va pousser les commits de votre branche locale "gestion_eleves" vers la branche "gestion_eleves" du dépôt distant appelé "origin". 
+
 ### 44. Basculer vers la branche principale 
 
 La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
@@ -680,62 +732,6 @@ git merge gestion_eleves
 Lorsque vous exécutez cette commande, Git examine les modifications entre la branche actuelle et la branche "gestion_eleves". Il essaie de fusionner automatiquement les modifications, en appliquant les changements de la branche "gestion_eleves" sur la branche courante.
 
 **REMARQUE : La fonction afficher_tous_les_élèves se trouve maintenant dans le ficher "gestion_eleve" dans la branche principale "main"**
-
-### 46. Publier le dépôt sur [GitHub](https://github.com/) 
-
-Créez un nouveau dépôt vide sur une plateforme de gestion de code telle que GitHub.
-
-#### Associez le dépôt local à votre dépôt distant en utilisant la commande suivante (remplacez l'URL par celle de votre dépôt distant) 
-     
-```
-git remote add origin <URL_du_depot distant>
-```
-
-La commande `git remote add origin <URL_du_depot_distant>` est utilisée pour associer un dépôt distant à votre dépôt Git local. L'argument `<URL_du_depot_distant>` doit être remplacé par l'URL du dépôt distant auquel vous souhaitez vous connecter. Cela peut être une URL HTTPS ou SSH, dépendant de votre configuration.
-
-Explication de la commande :
-
-- `git remote` est la commande pour gérer les dépôts distants.
-- `add origin` est utilisé pour ajouter un nouveau dépôt distant avec le nom "origin". "origin" est souvent utilisé par convention pour désigner le dépôt distant principal.
-- `<URL_du_depot_distant>` est l'URL du dépôt distant que vous souhaitez associer à votre dépôt local. Par exemple, si vous utilisez GitHub, l'URL peut ressembler à `https://github.com/votre-utilisateur/votre-depot.git`.
-
-Résultat de l'exécution de la commande :
-
-- Si la commande est exécutée avec succès, elle n'affiche généralement aucun message.
-- L'URL du dépôt distant est enregistrée sous le nom "origin" dans votre dépôt local. Cela vous permet de référencer facilement le dépôt distant lors de l'exécution de commandes telles que `git push` ou `git pull`.
-
-
-#### Poussez votre dépôt local vers le dépôt distant :
-
-```
-git push -u origin master
-```
-
-La commande `git push -u origin master` est utilisée pour pousser les commits de la branche "master" vers le dépôt distant associé à l'alias "origin". L'option `-u` est utilisée pour configurer la branche locale "master" pour qu'elle suive la branche distante "master" sur le dépôt distant "origin".
-
-Explication de la commande :
-
-- `git push` est la commande pour pousser les commits vers un dépôt distant.
-- `-u` est une option qui permet de configurer la branche locale pour qu'elle suive la branche distante.
-- `origin` est l'alias donné au dépôt distant au moment de l'association avec `git remote add origin <URL_du_depot_distant>`.
-- `master` est le nom de la branche locale que vous souhaitez pousser vers le dépôt distant.
-
-Résultat de l'exécution de la commande :
-
-- Si la commande est exécutée avec succès et qu'il n'y a pas de problèmes de connectivité ou d'autorisations, Git pousse les commits de la branche locale "master" vers la branche distante "master" sur le dépôt distant "origin".
-- Git affiche des informations sur les commits poussés, ainsi que des statistiques sur les modifications ajoutées ou supprimées.
-- Par exemple :
-  ```
-  Enumerating objects: 5, done.
-  Counting objects: 100% (5/5), done.
-  Delta compression using up to 4 threads
-  Compressing objects: 100% (3/3), done.
-  Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
-  Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
-  To <URL_du_depot_distant>
-     f7fde4f..2cfd3b1  master -> master
-  ```
- 
 
 ### 47. Vérification du dépot et des commits sur [GitHub](https://github.com/) 
 
