@@ -41,8 +41,6 @@ Cela affichera une liste des paramètres de configuration globale, y compris vot
 
 Assurez-vous de rechercher les lignes contenant **`user.name` et `user.email`** dans la sortie de la commande pour confirmer que vos informations de configuration sont correctement enregistrées.
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/2fe54518-acb9-4214-acac-8fcf51071f14)
-
 ### 3. Initialisation d'un nouveau dépôt :
 
 Créez un nouveau dossier vide pour votre dépôt :
@@ -74,8 +72,6 @@ Git affiche un message indiquant que le dépôt est initialisé :
   Initialized empty Git repository in /chemin/vers/le/repertoire/.git/
   ```
 Après l'initialisation du dépôt, vous pouvez commencer à ajouter des fichiers au suivi de Git, créer des commits et effectuer d'autres opérations liées à la gestion des versions avec Git.
-
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/7f316a73-d9dd-467c-9e48-5d57843695fc)
 
 ### 5. Création d'un fichier Python
 
@@ -129,9 +125,6 @@ Résultat de l'exécution de la commande :
 
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/e6be4c6d-7964-4196-9def-bd4c135e2778)
-
-
 ### 9. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
@@ -160,9 +153,6 @@ Résultat de l'exécution de la commande :
 
 - Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
 
-
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/d6c432e5-6c36-4dae-92ad-6d966ae3ab91)
-
 ### 10. Ajout d'autres fonctions :
 
 Ajoutez d'autres fonctions de calculatrice dans le fichier `calculatrice.py`, par exemple une fonction `soustraction` :
@@ -186,8 +176,6 @@ git commit -m "Ajout de la fonction de soustraction"
 ```
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/60035140-0ce6-47dc-8b24-27e24eea99b9)
-
 ### 13. Vérification de l'historique des commits :
 
 Affichez l'historique des commits en utilisant la commande suivante :
@@ -197,9 +185,6 @@ git log
 ```
 
 L'historique des commits affiché par `git log` vous permet de visualiser les modifications apportées aux fichiers au fil du temps, ainsi que les auteurs et les messages associés à chaque commit. Cela vous aide à comprendre l'évolution du projet et à revenir à des versions spécifiques si nécessaire.
-
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/289c8f86-8f64-440f-b0f4-f61aef8e3100)
-
 
 ### 14. Ajout d'autres fonctions :
 
@@ -224,8 +209,6 @@ git commit -m "Ajout de la fonction de multiplication"
 ```
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/7011d6d8-6c77-4745-b003-0e52de06cf16)
-
 ### 17. Vérification de l'historique des commits :
 
 Affichez l'historique des commits en utilisant la commande suivante :
@@ -235,8 +218,6 @@ git log
 ```
 
 L'historique des commits affiché par `git log` vous permet de visualiser les modifications apportées aux fichiers au fil du temps, ainsi que les auteurs et les messages associés à chaque commit. Cela vous aide à comprendre l'évolution du projet et à revenir à des versions spécifiques si nécessaire.
-
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/60dd4f67-f69d-4e8d-bd44-ebd4dca00fcc)
 
 ### 18. Ajout d'autres fonctions :
 
@@ -265,8 +246,6 @@ git commit -m "Ajout de la fonction de division"
 ```
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/69e6120c-70c7-45d8-b967-ab0538e32ccb)
-
 ### 21. Vérification de l'historique des commits :
 
 Affichez l'historique des commits en utilisant la commande suivante :
@@ -276,8 +255,6 @@ git log
 ```
 
 L'historique des commits affiché par `git log` vous permet de visualiser les modifications apportées aux fichiers au fil du temps, ainsi que les auteurs et les messages associés à chaque commit. Cela vous aide à comprendre l'évolution du projet et à revenir à des versions spécifiques si nécessaire.
-
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/e6633c22-15b7-4688-b2d7-4ac646d9038c)
 
 ### 22. Ajout d'autres fonctions :
 
@@ -336,8 +313,6 @@ git commit -m "Ajout de la fonction de calculatrice"
 ```
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/2ec82a41-ea7f-4e4b-b790-09cba74c7018)
-
 ### 25. Vérification de l'historique des commits 
 
 Affichez l'historique des commits en utilisant la commande suivante :
@@ -347,8 +322,6 @@ git log
 ```
 
 L'historique des commits affiché par `git log` vous permet de visualiser les modifications apportées aux fichiers au fil du temps, ainsi que les auteurs et les messages associés à chaque commit. Cela vous aide à comprendre l'évolution du projet et à revenir à des versions spécifiques si nécessaire.
-
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/8cadb767-8a77-4804-8634-70f6a071772e)
 
 
 ### 26. Publier le dépôt sur [GitHub](https://github.com/) 
@@ -405,12 +378,10 @@ Résultat de l'exécution de la commande :
   To <URL_du_depot_distant>
      f7fde4f..2cfd3b1  master -> master
   ```
-  
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/e32a738b-2b20-4841-9c84-f377eb69ef0e)
+ 
 
 ### 27. Vérification du dépot et des commits sur [GitHub](https://github.com/) 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/9e250760-c8bf-4b88-94d4-ee43a4ca5a11)
 
 Pour vérifier les commits dans un dépôt GitHub, vous pouvez suivre les étapes suivantes :
 
@@ -418,7 +389,6 @@ Pour vérifier les commits dans un dépôt GitHub, vous pouvez suivre les étape
 
 2. La page des commits affiche les commits dans l'ordre chronologique, du plus récent au plus ancien. Chaque commit est accompagné d'un message de commit, de l'auteur du commit, de l'heure et de la date du commit, ainsi que des statistiques sur les modifications ajoutées ou supprimées.
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/1d53380f-373b-4a35-8427-e0f291bf926b)
 
 En utilisant l'interface GitHub, vous pouvez facilement visualiser l'historique des commits, examiner les modifications apportées aux fichiers et les commentaires associés à chaque commit. Cela vous permet de suivre l'évolution du dépôt et de comprendre les changements qui ont été effectués au fil du temps.
 
