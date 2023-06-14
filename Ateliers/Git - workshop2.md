@@ -43,22 +43,6 @@ Cela affichera une liste des paramètres de configuration globale, y compris vot
 
 Assurez-vous de rechercher les lignes contenant **`user.name` et `user.email`** dans la sortie de la commande pour confirmer que vos informations de configuration sont correctement enregistrées.
 
-### 3. Initialisation d'un nouveau dépôt :
-
-Créez un nouveau dossier vide pour votre dépôt :
-
-```
-$ mkdir mon-depot
-```
-
-Cette commande crée un nouveau dossier (répertoire) portant le nom "mon-depot". Le terme "mkdir" est une abréviation de "make directory", qui signifie créer un répertoire. Une fois cette commande exécutée, un nouveau dossier vide portant le nom "mon-depot" est créé dans le répertoire actuel.
-
-```
-$ cd mon-depot
-```
-
-Cette commande permet de changer de répertoire (se déplacer vers un autre dossier). Le terme "cd" est une abréviation de "change directory". Lorsque vous exécutez cette commande, vous vous déplacez dans le dossier "mon-depot" qui vient d'être créé. Toutes les commandes ultérieures seront exécutées dans ce nouveau dossier.
-
 ### 4. Création d'un fichier Python
 
 Créez un fichier Python vide dans le dossier :
