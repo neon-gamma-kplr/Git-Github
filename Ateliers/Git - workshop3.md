@@ -382,3 +382,28 @@ Pour fusionner le pull request cliquer sur Merge pull request puis Confirm merge
 ### . Verifier les commits dans votre repository 
 
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/bc0cc700-a4ad-4f70-96ef-f58a0c3f751b)
+
+### 10. Basculer vers la branche principale 
+
+La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
+
+```
+git checkout main
+```
+
+Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
+
+### . Récupérer les dernières modifications à partir d'un dépôt distant
+
+La commande git pull est utilisée pour récupérer les dernières modifications à partir d'un dépôt distant (par exemple, un référentiel Git distant tel que GitHub) et les fusionner avec votre branche locale.
+
+```
+git pull 
+```
+
+
+Lorsque vous exécutez git pull, Git effectue les actions suivantes :
+
+Récupère les nouvelles modifications du dépôt distant.
+Fusionne les modifications récupérées avec votre branche locale.
+Cela permet de mettre à jour votre branche locale avec les dernières modifications disponibles dans le dépôt distant.
