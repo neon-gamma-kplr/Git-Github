@@ -291,63 +291,6 @@ git log
 
 L'historique des commits affiché par `git log` vous permet de visualiser les modifications apportées aux fichiers au fil du temps, ainsi que les auteurs et les messages associés à chaque commit. Cela vous aide à comprendre l'évolution du projet et à revenir à des versions spécifiques si nécessaire.
 
-
-### 24. Publier le dépôt sur [GitHub](https://github.com/) 
-
-Créez un nouveau dépôt vide sur une plateforme de gestion de code telle que GitHub.
-
-#### Associez le dépôt local à votre dépôt distant en utilisant la commande suivante (remplacez l'URL par celle de votre dépôt distant) 
-     
-```
-git remote add origin <URL_du_depot distant>
-```
-
-La commande `git remote add origin <URL_du_depot_distant>` est utilisée pour associer un dépôt distant à votre dépôt Git local. L'argument `<URL_du_depot_distant>` doit être remplacé par l'URL du dépôt distant auquel vous souhaitez vous connecter. Cela peut être une URL HTTPS ou SSH, dépendant de votre configuration.
-
-Explication de la commande :
-
-- `git remote` est la commande pour gérer les dépôts distants.
-- `add origin` est utilisé pour ajouter un nouveau dépôt distant avec le nom "origin". "origin" est souvent utilisé par convention pour désigner le dépôt distant principal.
-- `<URL_du_depot_distant>` est l'URL du dépôt distant que vous souhaitez associer à votre dépôt local. Par exemple, si vous utilisez GitHub, l'URL peut ressembler à `https://github.com/votre-utilisateur/votre-depot.git`.
-
-Résultat de l'exécution de la commande :
-
-- Si la commande est exécutée avec succès, elle n'affiche généralement aucun message.
-- L'URL du dépôt distant est enregistrée sous le nom "origin" dans votre dépôt local. Cela vous permet de référencer facilement le dépôt distant lors de l'exécution de commandes telles que `git push` ou `git pull`.
-
-
-#### Poussez votre dépôt local vers le dépôt distant :
-
-```
-git push -u origin master
-```
-
-La commande `git push -u origin master` est utilisée pour pousser les commits de la branche "master" vers le dépôt distant associé à l'alias "origin". L'option `-u` est utilisée pour configurer la branche locale "master" pour qu'elle suive la branche distante "master" sur le dépôt distant "origin".
-
-Explication de la commande :
-
-- `git push` est la commande pour pousser les commits vers un dépôt distant.
-- `-u` est une option qui permet de configurer la branche locale pour qu'elle suive la branche distante.
-- `origin` est l'alias donné au dépôt distant au moment de l'association avec `git remote add origin <URL_du_depot_distant>`.
-- `master` est le nom de la branche locale que vous souhaitez pousser vers le dépôt distant.
-
-Résultat de l'exécution de la commande :
-
-- Si la commande est exécutée avec succès et qu'il n'y a pas de problèmes de connectivité ou d'autorisations, Git pousse les commits de la branche locale "master" vers la branche distante "master" sur le dépôt distant "origin".
-- Git affiche des informations sur les commits poussés, ainsi que des statistiques sur les modifications ajoutées ou supprimées.
-- Par exemple :
-  ```
-  Enumerating objects: 5, done.
-  Counting objects: 100% (5/5), done.
-  Delta compression using up to 4 threads
-  Compressing objects: 100% (3/3), done.
-  Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
-  Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
-  To <URL_du_depot_distant>
-     f7fde4f..2cfd3b1  master -> master
-  ```
- 
-
 ### 25. Vérification du dépot et des commits sur [GitHub](https://github.com/) 
 
 
