@@ -178,7 +178,7 @@ Pour pousser votre branche nommée "convertir" vers le dépôt distant nommé "o
 git push origin convertir
 ```
 
-Cette commande va pousser les commits de votre branche locale "convertir" vers la branche "cconvertir" du dépôt distant appelé "origin". 
+Cette commande va pousser les commits de votre branche locale "convertir" vers la branche "convertir" du dépôt distant appelé "origin". 
 
 ### . Accédez au référentiel distant sur [GitHub](https://github.com/) 
 
@@ -203,3 +203,182 @@ Pour fusionner le pull request cliquer sur Merge pull request puis Confirm merge
 ### . Verifier les commits dans votre repository 
 
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/b08618ff-09cf-4b7f-8cb7-d41eb8908fc1)
+
+### 10. Basculer vers la branche principale 
+
+La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
+
+```
+git checkout main
+```
+
+Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
+
+### . Récupérer les dernières modifications à partir d'un dépôt distant
+
+La commande git pull est utilisée pour récupérer les dernières modifications à partir d'un dépôt distant (par exemple, un référentiel Git distant tel que GitHub) et les fusionner avec votre branche locale.
+
+```
+git pull 
+```
+
+
+Lorsque vous exécutez git pull, Git effectue les actions suivantes :
+
+Récupère les nouvelles modifications du dépôt distant.
+Fusionne les modifications récupérées avec votre branche locale.
+Cela permet de mettre à jour votre branche locale avec les dernières modifications disponibles dans le dépôt distant. 
+
+### 4. Création de la nouvelle branche convertisseur
+
+Une branche est une ligne de développement isolée qui permet aux utilisateurs de travailler sur des fonctionnalités, des correctifs ou des expérimentations sans affecter la branche principale du projet, généralement appelée "branche principale" ou "branche maître" (par convention, "master" en anglais).
+
+```
+git branch convertisseur
+```
+La commande "git branch convertisseur" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "convertisseur". 
+
+### 5. Basculer vers la branche convertisseur
+
+La commande "git checkout convertisseur" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "convertisseur".
+
+```
+git checkout convertisseur
+```
+Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche spécifiée. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "convertisseur". Les modifications non validées dans votre branche actuelle peuvent être perdues si elles ne sont pas sauvegardées ou validées avant de passer à une autre branche.
+
+### 6. Ouvrez le fichier `devise.py` et ajoutez la fonction convertisseur()
+
+```
+def convertisseur():
+    print("Bienvenue dans le convertisseur de devises !")
+
+    taux_de_change = {
+        "USD": 1.18,  # Taux de change USD vers EUR
+        "GBP": 0.85,  # Taux de change GBP vers EUR
+        "JPY": 132.12,  # Taux de change JPY vers EUR
+        "CAD": 1.46,  # Taux de change CAD vers EUR
+        "AUD": 1.62  # Taux de change AUD vers EUR
+    }
+
+    montant = float(input("Entrez le montant à convertir : "))
+    devise_source = input("Entrez la devise source (ex : USD, GBP, JPY) : ")
+    devise_cible = input("Entrez la devise cible (ex : USD, GBP, JPY) : ")
+
+    if devise_source in taux_de_change and devise_cible in taux_de_change:
+        taux_source = taux_de_change[devise_source]
+        taux_cible = taux_de_change[devise_cible]
+
+        # Conversion de la devise source vers EUR
+        montant_eur = convertir(montant, 1/taux_source)
+
+        # Conversion d'EUR vers la devise cible
+        montant_cible = convertir(montant_eur, taux_cible)
+
+        print(f"{montant} {devise_source} équivaut à {montant_cible} {devise_cible}")
+    else:
+        print("Devise non prise en charge")
+
+if __name__ == "__main__":
+    convertisseur()
+```
+La fonction convertisseur() est une fonction qui permet à l'utilisateur d'entrer un montant, une devise source et une devise cible, puis effectue la conversion du montant de la devise source vers la devise cible en utilisant les taux de change prédéfinis.
+
+### 7. Ajoutez le fichier `devise.py` au suivi de Git en utilisant la commande suivante 
+
+```
+$ git add .
+```
+
+La commande `git add .` est utilisée pour ajouter le fichier `devise.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
+
+### 8. Création du commit pour la fonction `convertisseur` 
+
+Créez un commit pour enregistrer la fonction `convertisseur` 
+
+```
+$ git commit -m "Ajout de la fonction convertisseur"
+```
+
+La commande `git commit -m "Ajout de la fonction convertisseur"` est utilisée pour créer un nouveau commit dans le dépôt Git. Un commit est une capture instantanée des modifications apportées aux fichiers suivis par Git.
+
+Explication de la commande :
+
+* `git commit` est la commande principale pour créer un commit.
+* `-m "Ajout de la fonction convertisseur"` est un paramètre qui permet de spécifier le message du commit. Le message doit être placé entre guillemets.
+
+Résultat de l'exécution de la commande :
+
+- Si le commit est créé avec succès, Git affiche des informations sur le commit, telles que l'identifiant unique du commit (SHA-1), l'auteur, la date et le message du commit.
+
+- Par exemple :
+
+```
+[main f7fde4f] Ajout de la fonction d'addition
+1 file changed, 10 insertions(+)
+```
+- Le commit est enregistré dans l'historique du dépôt Git, capturant ainsi les modifications apportées aux fichiers à ce stade.
+
+Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
+
+### 9. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+
+```
+$ git log
+```
+
+La commande `git log` est utilisée pour afficher l'historique des commits dans le dépôt Git. Lorsque vous exécutez cette commande, Git affiche une liste des commits effectués, triés du plus récent au plus ancien.
+
+Résultat de l'exécution de la commande :
+
+- Chaque commit est affiché avec des informations telles que l'identifiant du commit (SHA-1), l'auteur, la date et le message du commit.
+- Par exemple :
+  ```
+  commit f7fde4f82d5e8a7574680a8e138e41c05d1e3d6e
+  Author: Votre nom <votre@email.com>
+  Date:   Lun. Sept. 13 10:00:00 2023 +0200
+
+      Ajout de la fonction d'addition
+
+  commit 2cfd3b1e8949a7b894ca57182a3b14db6c0ee43f
+  Author: Autre contributeur <autre@email.com>
+  Date:   Lun. Sept. 12 15:30:00 2023 +0200
+
+      Correction de bug dans la fonction de soustraction
+  ```
+
+- Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
+
+### . Pousser le fichier devise.py vers la branche convertisseur
+
+Pour pousser votre branche nommée "convertisseur" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
+
+```
+git push origin convertisseur
+```
+
+Cette commande va pousser les commits de votre branche locale "convertisseur" vers la branche "convertisseur" du dépôt distant appelé "origin". 
+
+### . Accédez au référentiel distant sur [GitHub](https://github.com/) 
+
+Cliquez sur le bouton "Compare & Pull Request" (demande de tirage) pour créer une nouvelle demande de tirage.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/8d26badc-1091-402e-be29-31435293c092)
+
+Ajoutez une description pour votre demande de tirage et soumettez-la.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/1d67eaa6-eefd-4b3c-a98e-e071840eeef2)
+
+Les collaborateurs peuvent maintenant examiner votre demande de tirage, ajouter des commentaires et demander des modifications supplémentaires si nécessaire.
+
+Une fois que la demande de tirage est approuvée et que toutes les modifications demandées sont effectuées, vous pouvez la fusionner avec la branche principale (par exemple, "master") en cliquant sur le bouton "Merge" (fusionner).
+
+Fusionner et confirmer la demande de tirage
+
+Pour fusionner le pull request cliquer sur Merge pull request puis Confirm merge
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/799bba42-c29d-4250-8652-4b38e29164ae)
+
+### . Verifier les commits dans votre repository 
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/bb5f9881-b803-41ae-83f3-0b0d914f1906)
