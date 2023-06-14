@@ -164,6 +164,11 @@ Résultat de l'exécution de la commande :
   ```
 
 - Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
+### . Pousser le fichier gestion_eleves.py vers la branche ajouter_eleve
+
+```
+git push origin ajouter_eleve
+```
 
 ### 10. Basculer vers la branche principale 
 
