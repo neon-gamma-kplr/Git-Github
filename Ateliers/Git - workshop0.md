@@ -381,4 +381,4 @@ Pour fusionner le pull request cliquer sur Merge pull request puis Confirm merge
 
 ### . Verifier les commits dans votre repository 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/bb5f9881-b803-41ae-83f3-0b0d914f1906)
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/bc0cc700-a4ad-4f70-96ef-f58a0c3f751b)
