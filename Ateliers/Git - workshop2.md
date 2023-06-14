@@ -43,7 +43,7 @@ Cela affichera une liste des paramètres de configuration globale, y compris vot
 
 Assurez-vous de rechercher les lignes contenant **`user.name` et `user.email`** dans la sortie de la commande pour confirmer que vos informations de configuration sont correctement enregistrées.
 
-### 4. Création d'un fichier Python
+### 3. Création d'un fichier Python
 
 Créez un fichier Python vide dans le dossier :
 
@@ -51,7 +51,7 @@ Créez un fichier Python vide dans le dossier :
 $ touch gestion_eleves.py
 ```
 
-### 5. Création de la nouvelle branche ajouter_eleve
+### 4. Création de la nouvelle branche ajouter_eleve
 
 Une branche est une ligne de développement isolée qui permet aux utilisateurs de travailler sur des fonctionnalités, des correctifs ou des expérimentations sans affecter la branche principale du projet, généralement appelée "branche principale" ou "branche maître" (par convention, "master" en anglais).
 
@@ -60,7 +60,7 @@ git branch ajouter_eleve
 ```
 La commande "git branch ajouter_eleve" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "ajouter_eleve". 
 
-### 6. Basculer vers la branche ajouter_eleve
+### 5. Basculer vers la branche ajouter_eleve
 
 La commande "git checkout ajouter_eleve" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "ajouter_eleve".
 
@@ -69,7 +69,7 @@ git checkout ajouter_eleve
 ```
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche spécifiée. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "ajouter_eleve". Les modifications non validées dans votre branche actuelle peuvent être perdues si elles ne sont pas sauvegardées ou validées avant de passer à une autre branche.
 
-### 7. Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour ajouter un élève
+### 6. Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour ajouter un élève
 
 ```
 def ajouter_élève():
@@ -81,7 +81,7 @@ def ajouter_élève():
 La fonction ajouter_élève permet à l'utilisateur d'entrer l'identifiant et le nom d'un nouvel élève, puis ajoute ces informations au dictionnaire élèves.
 
 
-### 8. Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
+### 7. Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
 
 ```
 $ git add .
@@ -89,7 +89,7 @@ $ git add .
 
 La commande `git add .` est utilisée pour ajouter le fichier `gestion_eleves.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 9. Création d'un premier commit pour la fonction `ajouter_élève` 
+### 8. Création d'un premier commit pour la fonction `ajouter_élève` 
 
 Créez un commit pour enregistrer la fonction `ajouter_élève` 
 
@@ -118,7 +118,7 @@ Résultat de l'exécution de la commande :
 
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-### 10. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+### 9. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
 $ git log
@@ -146,7 +146,7 @@ Résultat de l'exécution de la commande :
 
 - Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
 
-### 11. Basculer vers la branche principale 
+### 10. Basculer vers la branche principale 
 
 La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
 
@@ -156,7 +156,7 @@ git checkout main
 
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
 
-### 12. Fudionner la branche "ajouter_eleve" avec la branche "main"
+### 11. Fudionner la branche "ajouter_eleve" avec la branche "main"
 
 La commande "git merge ajouter_eleve" fusionne la branche "ajouter_eleve" dans la branche actuelle. Plus précisément, elle incorpore les modifications de la branche "ajouter_eleve" dans la branche courante.
 
@@ -170,14 +170,14 @@ En résumé, la commande "git merge ajouter_eleve" fusionne les modifications de
 
 **REMARQUE : La fonction ajouter_eleve se trouve maintenant dans le ficher "gestion_eleve" dans la branche principale "main"**
 
-### 14. Création de la nouvelle branche modifier_eleve
+### 12. Création de la nouvelle branche modifier_eleve
 
 ```
 git branch modifier_eleve
 ```
 La commande "git branch modifier_eleve" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "modifier_eleve". 
 
-### 15. Basculer vers la branche modifier_eleve
+### 13. Basculer vers la branche modifier_eleve
 
 La commande "git checkout modifier_eleve" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "modifier_eleve".
 
