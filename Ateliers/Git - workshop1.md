@@ -1,7 +1,10 @@
 # GIT 
 
 ## Objectif
-Apprendre comment commettre des changements dans des dépôts Git.
+
+L'objectif de cet atelier est d'apprendre comment commettre des changements dans des dépôts Git de manière efficace.
+
+Vous découvrirez comment utiliser les commandes git add pour préparer les fichiers modifiés, git commit pour créer un instantané des modifications, et git push pour pousser les commits vers un dépôt distant.
 
 ## Instructions
 
