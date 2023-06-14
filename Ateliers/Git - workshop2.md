@@ -43,8 +43,6 @@ Cela affichera une liste des paramètres de configuration globale, y compris vot
 
 Assurez-vous de rechercher les lignes contenant **`user.name` et `user.email`** dans la sortie de la commande pour confirmer que vos informations de configuration sont correctement enregistrées.
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/2fe54518-acb9-4214-acac-8fcf51071f14)
-
 ### 3. Initialisation d'un nouveau dépôt :
 
 Créez un nouveau dossier vide pour votre dépôt :
@@ -77,8 +75,6 @@ Git affiche un message indiquant que le dépôt est initialisé :
   ```
 Après l'initialisation du dépôt, vous pouvez commencer à ajouter des fichiers au suivi de Git, créer des commits et effectuer d'autres opérations liées à la gestion des versions avec Git.
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/fa6ddeba-35ae-4e7d-9eba-d4782b868ece)
-
 ### 5. Création d'un fichier Python
 
 Créez un fichier Python vide dans le dossier :
@@ -104,8 +100,6 @@ La commande "git checkout ajouter_eleve" est utilisée pour basculer vers une br
 git checkout ajouter_eleve
 ```
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche spécifiée. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "ajouter_eleve". Les modifications non validées dans votre branche actuelle peuvent être perdues si elles ne sont pas sauvegardées ou validées avant de passer à une autre branche.
-
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/24c4ffde-b190-4022-8549-6a743cf26dc9)
 
 ### 8. Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour ajouter un élève
 
@@ -156,8 +150,6 @@ Résultat de l'exécution de la commande :
 
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/c52a34ed-34c8-436b-a8a2-d499d77c7a40)
-
 ### 11. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
@@ -186,8 +178,6 @@ Résultat de l'exécution de la commande :
 
 - Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/e41a8a1e-ce34-48ef-8d7b-e60a3f47695b)
-
 ### 12. Basculer vers la branche principale 
 
 La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
@@ -198,8 +188,6 @@ git checkout main
 
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/f2bb6a1c-53fd-4878-aedc-5d3973750c15)
-
 ### 13. Fudionner la branche "ajouter_eleve" avec la branche "main"
 
 La commande "git merge ajouter_eleve" fusionne la branche "ajouter_eleve" dans la branche actuelle. Plus précisément, elle incorpore les modifications de la branche "ajouter_eleve" dans la branche courante.
@@ -209,8 +197,6 @@ git merge ajouter_eleve
 ```
 
 Lorsque vous exécutez cette commande, Git examine les modifications entre la branche actuelle et la branche "ajouter_eleve". Il essaie de fusionner automatiquement les modifications, en appliquant les changements de la branche "ajouter_eleve" sur la branche courante.
-
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/cbc15f8c-4b27-4a4f-a489-f53397ece1a8)
 
 En résumé, la commande "git merge ajouter_eleve" fusionne les modifications de la branche "ajouter_eleve" dans la branche courante, incorporant ainsi les changements effectués dans la branche "ajouter_eleve" dans votre branche de travail actuelle.
 
@@ -230,8 +216,6 @@ La commande "git checkout modifier_eleve" est utilisée pour basculer vers une b
 ```
 git checkout modifier_eleve
 ```
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/2ce82b40-d957-46ef-bcec-508a28e53271)
-
 
 ### 16. Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour modifier un élève
 
@@ -285,8 +269,6 @@ Résultat de l'exécution de la commande :
 
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/fa5c28fb-2387-49c8-84a6-bb4831f002aa)
-
 ### 19. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
@@ -315,8 +297,6 @@ Résultat de l'exécution de la commande :
 
 - Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/0d16bd78-a3ef-4d11-9432-7a86ddc50958)
-
 ### 20. Basculer vers la branche principale 
 
 La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
@@ -327,8 +307,6 @@ git checkout main
 
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/f2bb6a1c-53fd-4878-aedc-5d3973750c15)
-
 ### 21. Fudionner la branche "modifier_eleve" avec la branche "main"
 
 La commande "git merge modifier_eleve" fusionne la branche "modifier_eleve" dans la branche actuelle. Plus précisément, elle incorpore les modifications de la branche "modifier_eleve" dans la branche courante.
@@ -338,8 +316,6 @@ git merge modifier_eleve
 ```
 
 Lorsque vous exécutez cette commande, Git examine les modifications entre la branche actuelle et la branche "modifer_eleve". Il essaie de fusionner automatiquement les modifications, en appliquant les changements de la branche "modifier_eleve" sur la branche courante.
-
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/97c509d8-37e3-48ac-b619-7cc5b226b3ce)
 
 **REMARQUE : La fonction modifier_eleve se trouve maintenant dans le ficher "gestion_eleve" dans la branche principale "main"**
 
@@ -358,8 +334,6 @@ La commande "git checkout supprimer_eleve" est utilisée pour basculer vers une 
 ```
 git checkout supprimer_eleve
 ```
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/3ac50e69-9423-416d-8dd4-21978552426e)
-
 
 ### 24. Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour supprimer un élève
 
@@ -412,8 +386,6 @@ Résultat de l'exécution de la commande :
 
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/d405ffa7-778d-4020-bcc8-f0d8ba56ed4f)
-
 ### 27. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
@@ -452,8 +424,6 @@ git checkout main
 
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/fd071bba-8e5a-4ed3-a47b-b175d999aca5)
-
 ### 29. Fudionner la branche "supprimer_eleve" avec la branche "main"
 
 La commande "git merge supprimer_eleve" fusionne la branche "supprimer_eleve" dans la branche actuelle. Plus précisément, elle incorpore les modifications de la branche "supprimer_eleve" dans la branche courante.
@@ -463,8 +433,6 @@ git merge supprimer_eleve
 ```
 
 Lorsque vous exécutez cette commande, Git examine les modifications entre la branche actuelle et la branche "supprimer_eleve". Il essaie de fusionner automatiquement les modifications, en appliquant les changements de la branche "supprimer_eleve" sur la branche courante.
-
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/4412936d-aa0d-4a1b-a570-86a5576c06ad)
 
 **REMARQUE : La fonction supprimer_eleve se trouve maintenant dans le ficher "gestion_eleve" dans la branche principale "main"**
 
@@ -482,8 +450,6 @@ La commande "git checkout afficher_tous_les_eleves" est utilisée pour basculer 
 ```
 git checkout afficher_tous_les_eleves
 ```
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/33ded92f-7896-4cb5-ac62-a9b1d4787be3)
-
 
 ### 32. Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour afficher tous les eleves
 
@@ -537,8 +503,6 @@ Résultat de l'exécution de la commande :
 
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/8385e429-7339-4b7a-baf7-2bef6cad8016)
-
 ### 35. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
@@ -577,8 +541,6 @@ git checkout main
 
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/890ee19a-bfae-40ba-a5bf-59d986058595)
-
 ### 37. Fudionner la branche "afficher_tous_les_eleves" avec la branche "main"
 
 La commande "git merge afficher_tous_les_eleves" fusionne la branche "afficher_tous_les_eleves" dans la branche actuelle. Plus précisément, elle incorpore les modifications de la branche "afficher_tous_les_eleves" dans la branche courante.
@@ -588,8 +550,6 @@ git merge afficher_tous_les_eleves
 ```
 
 Lorsque vous exécutez cette commande, Git examine les modifications entre la branche actuelle et la branche "afficher_tous_les_eleves". Il essaie de fusionner automatiquement les modifications, en appliquant les changements de la branche "afficher_tous_les_eleves" sur la branche courante.
-
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/532cd0f7-aa09-4caf-8868-58dc8bc10f53)
 
 **REMARQUE : La fonction afficher_tous_les_élèves se trouve maintenant dans le ficher "gestion_eleve" dans la branche principale "main"**
 
@@ -607,8 +567,6 @@ La commande "git checkout gestion_eleves" est utilisée pour basculer vers une b
 ```
 git checkout gestion_eleves
 ```
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/d9213995-5cbb-4c1c-bfc5-68fb2985bf84)
-
 
 ### 40. Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction principale 
 
@@ -681,8 +639,6 @@ Résultat de l'exécution de la commande :
 
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/8d8ea649-b979-4f11-8006-65bea637079f)
-
 ### 43. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
@@ -721,8 +677,6 @@ git checkout main
 
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/5bcc91d3-e51b-49d6-9b69-e2a196796405)
-
 ### 45. Fudionner la branche "gestion_eleves" avec la branche "main"
 
 La commande "git merge gestion_eleves" fusionne la branche "gestion_eleves" dans la branche actuelle. Plus précisément, elle incorpore les modifications de la branche "gestion_eleves" dans la branche courante.
@@ -732,8 +686,6 @@ git merge gestion_eleves
 ```
 
 Lorsque vous exécutez cette commande, Git examine les modifications entre la branche actuelle et la branche "gestion_eleves". Il essaie de fusionner automatiquement les modifications, en appliquant les changements de la branche "gestion_eleves" sur la branche courante.
-
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/52dcb5ba-5e9e-4fd1-9080-cb1591cd8a61)
 
 **REMARQUE : La fonction afficher_tous_les_élèves se trouve maintenant dans le ficher "gestion_eleve" dans la branche principale "main"**
 
@@ -795,18 +747,14 @@ Résultat de l'exécution de la commande :
 
 ### 47. Vérification du dépot et des commits sur [GitHub](https://github.com/) 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/9e250760-c8bf-4b88-94d4-ee43a4ca5a11)
-
 Pour vérifier les commits dans un dépôt GitHub, vous pouvez suivre les étapes suivantes :
 
 1. Dans l'onglet du dépôt, vous trouverez plusieurs onglets différents tels que "Code", "Issues", "Pull requests", etc. Cliquez sur l'onglet "Commits" pour afficher la liste des commits.
 
 2. La page des commits affiche les commits dans l'ordre chronologique, du plus récent au plus ancien. Chaque commit est accompagné d'un message de commit, de l'auteur du commit, de l'heure et de la date du commit, ainsi que des statistiques sur les modifications ajoutées ou supprimées.
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/1d53380f-373b-4a35-8427-e0f291bf926b)
-
 En utilisant l'interface GitHub, vous pouvez facilement visualiser l'historique des commits, examiner les modifications apportées aux fichiers et les commentaires associés à chaque commit. Cela vous permet de suivre l'évolution du dépôt et de comprendre les changements qui ont été effectués au fil du temps.
 
-Cela conclut l'atelier d'initialisation Git avec l'ajout et le commit de chaque fonction de la calculatrice séparément. 
+
 
 
