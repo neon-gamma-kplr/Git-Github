@@ -163,7 +163,7 @@ Résultat de l'exécution de la commande :
 
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/d6c432e5-6c36-4dae-92ad-6d966ae3ab91)
 
-### 10. Ajout d'autres fonctions et création de commits séparés :
+### 10. Ajout d'autres fonctions :
 
 Ajoutez d'autres fonctions de calculatrice dans le fichier `calculatrice.py`, par exemple une fonction `soustraction` :
 
@@ -201,8 +201,160 @@ L'historique des commits affiché par `git log` vous permet de visualiser les mo
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/289c8f86-8f64-440f-b0f4-f61aef8e3100)
 
 
-7. Publier le dépôt sur un serveur distant (optionnel) :
-   - Créez un nouveau dépôt vide sur une plateforme de gestion de code telle que GitHub, GitLab ou Bitbucket.
+### 14. Ajout d'autres fonctions :
+
+Ajoutez d'autres fonctions de calculatrice dans le fichier `calculatrice.py`, par exemple une fonction `multiplication` :
+
+```
+def multiplication(a, b):
+    return a * b
+```
+
+ ### 15. Ajoutez le fichier modifié au suivi :
+ 
+```
+git add .
+```
+La commande `git add .` est utilisée pour ajouter le fichier `calculatrice.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
+
+### 16. Créez un nouveau commit pour enregistrer la fonction `multiplication` :
+
+```
+git commit -m "Ajout de la fonction de multiplication"
+```
+Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/7011d6d8-6c77-4745-b003-0e52de06cf16)
+
+### 17. Vérification de l'historique des commits :
+
+Affichez l'historique des commits en utilisant la commande suivante :
+
+```
+git log
+```
+
+L'historique des commits affiché par `git log` vous permet de visualiser les modifications apportées aux fichiers au fil du temps, ainsi que les auteurs et les messages associés à chaque commit. Cela vous aide à comprendre l'évolution du projet et à revenir à des versions spécifiques si nécessaire.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/60dd4f67-f69d-4e8d-bd44-ebd4dca00fcc)
+
+### 18. Ajout d'autres fonctions :
+
+Ajoutez d'autres fonctions de calculatrice dans le fichier `calculatrice.py`, par exemple une fonction `division` :
+
+```
+def division(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Erreur : Division par zéro"
+
+```
+
+ ### 19. Ajoutez le fichier modifié au suivi :
+ 
+```
+git add .
+```
+La commande `git add .` est utilisée pour ajouter le fichier `calculatrice.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
+
+### 20. Créez un nouveau commit pour enregistrer la fonction `division` :
+
+```
+git commit -m "Ajout de la fonction de division"
+```
+Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/69e6120c-70c7-45d8-b967-ab0538e32ccb)
+
+### 21. Vérification de l'historique des commits :
+
+Affichez l'historique des commits en utilisant la commande suivante :
+
+```
+git log
+```
+
+L'historique des commits affiché par `git log` vous permet de visualiser les modifications apportées aux fichiers au fil du temps, ainsi que les auteurs et les messages associés à chaque commit. Cela vous aide à comprendre l'évolution du projet et à revenir à des versions spécifiques si nécessaire.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/e6633c22-15b7-4688-b2d7-4ac646d9038c)
+
+### 22. Ajout d'autres fonctions :
+
+La fonction calculatrice() qui affiche une liste de choix à l'utilisateur, lui permet de saisir deux nombres, effectue le calcul correspondant et affiche le résultat.
+
+```
+def calculatrice():
+    print("Bienvenue dans la calculatrice !")
+    print("Veuillez choisir une opération :")
+    print("1. Addition")
+    print("2. Soustraction")
+    print("3. Multiplication")
+    print("4. Division")
+    choix = input("Votre choix (1-4) : ")
+
+    if choix == "1":
+        a = float(input("Premier nombre : "))
+        b = float(input("Deuxième nombre : "))
+        resultat = addition(a, b)
+        print("Résultat : ", resultat)
+    elif choix == "2":
+        a = float(input("Premier nombre : "))
+        b = float(input("Deuxième nombre : "))
+        resultat = soustraction(a, b)
+        print("Résultat : ", resultat)
+    elif choix == "3":
+        a = float(input("Premier nombre : "))
+        b = float(input("Deuxième nombre : "))
+        resultat = multiplication(a, b)
+        print("Résultat : ", resultat)
+    elif choix == "4":
+        a = float(input("Numérateur : "))
+        b = float(input("Dénominateur : "))
+        if b != 0:
+            resultat = division(a, b)
+            print("Résultat : ", resultat)
+        else:
+            print("Erreur : Division par zéro")
+    else:
+        print("Choix invalide.")
+
+calculatrice()
+```
+
+ ### 23. Ajoutez le fichier modifié au suivi :
+ 
+```
+git add .
+```
+La commande `git add .` est utilisée pour ajouter le fichier `calculatrice.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
+
+### 24. Créez un nouveau commit pour enregistrer la fonction `calculatrice` :
+
+```
+git commit -m "Ajout de la fonction de calculatrice"
+```
+Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/2ec82a41-ea7f-4e4b-b790-09cba74c7018)
+
+### 25. Vérification de l'historique des commits :
+
+Affichez l'historique des commits en utilisant la commande suivante :
+
+```
+git log
+```
+
+L'historique des commits affiché par `git log` vous permet de visualiser les modifications apportées aux fichiers au fil du temps, ainsi que les auteurs et les messages associés à chaque commit. Cela vous aide à comprendre l'évolution du projet et à revenir à des versions spécifiques si nécessaire.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/8cadb767-8a77-4804-8634-70f6a071772e)
+
+
+### 26. Publier le dépôt sur [GitHub](https://github.com/) :
+
+Créez un nouveau dépôt vide sur une plateforme de gestion de code telle que GitHub.
+
    - Associez le dépôt local à votre dépôt distant en utilisant la commande suivante (remplacez l'URL par celle de votre dépôt distant) :
      ```
      git remote add origin <URL_du_depot distant>
