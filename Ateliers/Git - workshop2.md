@@ -107,7 +107,7 @@ Lorsque vous exécutez cette commande, Git met à jour votre répertoire de trav
 
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/24c4ffde-b190-4022-8549-6a743cf26dc9)
 
-### 8. Ouvrez le fichier `eleves.py` et ajoutez la fonction pour ajouter un elève
+### 8. Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour ajouter un élève
 
 ```
 def ajouter_élève():
@@ -120,8 +120,232 @@ La fonction ajouter_élève permet à l'utilisateur d'entrer l'identifiant et le
 
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/49aa3126-4234-4c07-8d80-8e5c0f462982)
 
-### 9.
+### 9. Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
 
+```
+$ git add .
+```
+
+La commande `git add .` est utilisée pour ajouter le fichier `calculatrice.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
+
+### 10. Création d'un premier commit pour la fonction `ajouter_élève` 
+
+Créez un commit pour enregistrer la fonction `ajouter_élève` 
+
+```
+$ git commit -m "Ajout de la fonction d'ajouter_élève"
+```
+
+La commande `git commit -m "Ajout de la fonction d'addition"` est utilisée pour créer un nouveau commit dans le dépôt Git. Un commit est une capture instantanée des modifications apportées aux fichiers suivis par Git.
+
+Explication de la commande :
+
+* `git commit` est la commande principale pour créer un commit.
+* `-m "Ajout de la fonction d'addition"` est un paramètre qui permet de spécifier le message du commit. Le message doit être placé entre guillemets.
+
+Résultat de l'exécution de la commande :
+
+- Si le commit est créé avec succès, Git affiche des informations sur le commit, telles que l'identifiant unique du commit (SHA-1), l'auteur, la date et le message du commit.
+
+- Par exemple :
+
+```
+[main f7fde4f] Ajout de la fonction d'addition
+1 file changed, 10 insertions(+)
+```
+- Le commit est enregistré dans l'historique du dépôt Git, capturant ainsi les modifications apportées aux fichiers à ce stade.
+
+Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/c52a34ed-34c8-436b-a8a2-d499d77c7a40)
+
+### 11. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+
+```
+$ git log
+```
+
+La commande `git log` est utilisée pour afficher l'historique des commits dans le dépôt Git. Lorsque vous exécutez cette commande, Git affiche une liste des commits effectués, triés du plus récent au plus ancien.
+
+Résultat de l'exécution de la commande :
+
+- Chaque commit est affiché avec des informations telles que l'identifiant du commit (SHA-1), l'auteur, la date et le message du commit.
+- Par exemple :
+  ```
+  commit f7fde4f82d5e8a7574680a8e138e41c05d1e3d6e
+  Author: Votre nom <votre@email.com>
+  Date:   Lun. Sept. 13 10:00:00 2023 +0200
+
+      Ajout de la fonction d'addition
+
+  commit 2cfd3b1e8949a7b894ca57182a3b14db6c0ee43f
+  Author: Autre contributeur <autre@email.com>
+  Date:   Lun. Sept. 12 15:30:00 2023 +0200
+
+      Correction de bug dans la fonction de soustraction
+  ```
+
+- Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/e41a8a1e-ce34-48ef-8d7b-e60a3f47695b)
+
+### 12. Basculer vers la branche principale 
+
+La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
+
+```
+git checkout main
+```
+
+Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/f2bb6a1c-53fd-4878-aedc-5d3973750c15)
+
+### 13. Fudionner la branche "ajouter_eleve" avec la branche "main"
+
+La commande "git merge ajouter_eleve" fusionne la branche "ajouter_eleve" dans la branche actuelle. Plus précisément, elle incorpore les modifications de la branche "ajouter_eleve" dans la branche courante.
+
+```
+git merge ajouter_eleve
+```
+
+Lorsque vous exécutez cette commande, Git examine les modifications entre la branche actuelle et la branche "ajouter_eleve". Il essaie de fusionner automatiquement les modifications, en appliquant les changements de la branche "ajouter_eleve" sur la branche courante.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/cbc15f8c-4b27-4a4f-a489-f53397ece1a8)
+
+En résumé, la commande "git merge ajouter_eleve" fusionne les modifications de la branche "ajouter_eleve" dans la branche courante, incorporant ainsi les changements effectués dans la branche "ajouter_eleve" dans votre branche de travail actuelle.
+
+**REMARQUE : La fonction ajouter_eleve se trouve maintenant dans le ficher "gestion_eleve" dans la branche principale "main"**
+
+### 14. Création de la nouvelle branche modifier_eleve
+
+```
+git branch modifier_eleve
+```
+La commande "git branch modifier_eleve" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "modifier_eleve". 
+
+### 15. Basculer vers la branche modifier_eleve
+
+La commande "git checkout modifier_eleve" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "modifier_eleve".
+
+```
+git checkout modifier_eleve
+```
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/2ce82b40-d957-46ef-bcec-508a28e53271)
+
+
+### 16. Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour modifier un élève
+
+```
+def modifier_élève():
+    id_élève = input("Entrez l'identifiant de l'élève à modifier : ")
+    if id_élève in élèves:
+        nouveau_nom = input("Entrez le nouveau nom de l'élève : ")
+        élèves[id_élève] = nouveau_nom
+        print("Élève mis à jour avec succès !")
+    else:
+        print("L'élève n'existe pas.")
+```
+
+La fonction modifier_élève permet à l'utilisateur d'entrer l'identifiant et le nom d'un nouvel élève, puis modifie ces informations au dictionnaire élèves.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/23223376-45ca-4460-a83f-94791cbdcc0f)
+
+
+### 17. Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
+
+```
+$ git add .
+```
+
+La commande `git add .` est utilisée pour ajouter le fichier `calculatrice.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
+
+### 18. Création d'un premier commit pour la fonction `modifier_élève` 
+
+Créez un commit pour enregistrer la fonction `modifier_élève` 
+
+```
+$ git commit -m "Ajout de la fonction de modifier_élève"
+```
+
+La commande `git commit -m "Ajout de la fonction de modifier_élève"` est utilisée pour créer un nouveau commit dans le dépôt Git. Un commit est une capture instantanée des modifications apportées aux fichiers suivis par Git.
+
+Explication de la commande :
+
+* `git commit` est la commande principale pour créer un commit.
+* `-m "Ajout de la fonction de modifier_élève"` est un paramètre qui permet de spécifier le message du commit. Le message doit être placé entre guillemets.
+
+Résultat de l'exécution de la commande :
+
+- Si le commit est créé avec succès, Git affiche des informations sur le commit, telles que l'identifiant unique du commit (SHA-1), l'auteur, la date et le message du commit.
+
+- Par exemple :
+
+```
+[main f7fde4f] Ajout de la fonction d'addition
+1 file changed, 10 insertions(+)
+```
+- Le commit est enregistré dans l'historique du dépôt Git, capturant ainsi les modifications apportées aux fichiers à ce stade.
+
+Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/fa5c28fb-2387-49c8-84a6-bb4831f002aa)
+
+### 19. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+
+```
+$ git log
+```
+
+La commande `git log` est utilisée pour afficher l'historique des commits dans le dépôt Git. Lorsque vous exécutez cette commande, Git affiche une liste des commits effectués, triés du plus récent au plus ancien.
+
+Résultat de l'exécution de la commande :
+
+- Chaque commit est affiché avec des informations telles que l'identifiant du commit (SHA-1), l'auteur, la date et le message du commit.
+- Par exemple :
+  ```
+  commit f7fde4f82d5e8a7574680a8e138e41c05d1e3d6e
+  Author: Votre nom <votre@email.com>
+  Date:   Lun. Sept. 13 10:00:00 2023 +0200
+
+      Ajout de la fonction d'addition
+
+  commit 2cfd3b1e8949a7b894ca57182a3b14db6c0ee43f
+  Author: Autre contributeur <autre@email.com>
+  Date:   Lun. Sept. 12 15:30:00 2023 +0200
+
+      Correction de bug dans la fonction de soustraction
+  ```
+
+- Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/0d16bd78-a3ef-4d11-9432-7a86ddc50958)
+
+### 20. Basculer vers la branche principale 
+
+La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
+
+```
+git checkout main
+```
+
+Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/f2bb6a1c-53fd-4878-aedc-5d3973750c15)
+
+### 21. Fudionner la branche "modifier_eleve" avec la branche "main"
+
+La commande "git merge modifier_eleve" fusionne la branche "modifier_eleve" dans la branche actuelle. Plus précisément, elle incorpore les modifications de la branche "modifier_eleve" dans la branche courante.
+
+```
+git merge modifier_eleve
+```
+
+Lorsque vous exécutez cette commande, Git examine les modifications entre la branche actuelle et la branche "modifer_eleve". Il essaie de fusionner automatiquement les modifications, en appliquant les changements de la branche "modifier_eleve" sur la branche courante.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/97c509d8-37e3-48ac-b619-7cc5b226b3ce)
+
+**REMARQUE : La fonction modifier_eleve se trouve maintenant dans le ficher "gestion_eleve" dans la branche principale "main"**
 
 
 
