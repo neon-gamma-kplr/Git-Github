@@ -41,39 +41,7 @@ Cela affichera une liste des paramètres de configuration globale, y compris vot
 
 Assurez-vous de rechercher les lignes contenant **`user.name` et `user.email`** dans la sortie de la commande pour confirmer que vos informations de configuration sont correctement enregistrées.
 
-### 3. Initialisation d'un nouveau dépôt :
-
-Créez un nouveau dossier vide pour votre dépôt :
-
-```
-$ mkdir mon-depot
-```
-
-Cette commande crée un nouveau dossier (répertoire) portant le nom "mon-depot". Le terme "mkdir" est une abréviation de "make directory", qui signifie créer un répertoire. Une fois cette commande exécutée, un nouveau dossier vide portant le nom "mon-depot" est créé dans le répertoire actuel.
-
-```
-$ cd mon-depot
-```
-
-Cette commande permet de changer de répertoire (se déplacer vers un autre dossier). Le terme "cd" est une abréviation de "change directory". Lorsque vous exécutez cette commande, vous vous déplacez dans le dossier "mon-depot" qui vient d'être créé. Toutes les commandes ultérieures seront exécutées dans ce nouveau dossier.
-
-### 4. Initialisez le dépôt Git en utilisant la commande suivante :
-
-```
-$ git init
-```
-
-La commande `git init` est utilisée pour initialiser un nouveau dépôt Git dans un répertoire existant. Lorsque vous exécutez cette commande, Git crée un sous-répertoire caché appelé ".git" dans le répertoire courant. Ce sous-répertoire contient toute la structure et les fichiers nécessaires pour suivre l'historique des modifications, gérer les branches, effectuer des commits, etc.
-
-Le résultat de l'exécution de la commande `git init` est le suivant :
-
-Git affiche un message indiquant que le dépôt est initialisé :
-  ```
-  Initialized empty Git repository in /chemin/vers/le/repertoire/.git/
-  ```
-Après l'initialisation du dépôt, vous pouvez commencer à ajouter des fichiers au suivi de Git, créer des commits et effectuer d'autres opérations liées à la gestion des versions avec Git.
-
-### 5. Création d'un fichier Python
+### 3. Création d'un fichier Python
 
 Créez un fichier Python vide dans le dossier :
 
@@ -81,14 +49,14 @@ Créez un fichier Python vide dans le dossier :
 $ touch calculatrice.py
 ```
 
-### 6. Ouvrez le fichier `calculatrice.py` et ajoutez les fonctions de calculatrice  
+### 4. Ouvrez le fichier `calculatrice.py` et ajoutez les fonctions de calculatrice  
 
 ```
 def addition(a, b):
   return a + b
 ```
 
-### 7. Ajoutez le fichier `calculatrice.py` au suivi de Git en utilisant la commande suivante 
+### 5. Ajoutez le fichier `calculatrice.py` au suivi de Git en utilisant la commande suivante 
 
 ```
 $ git add .
@@ -96,7 +64,7 @@ $ git add .
 
 La commande `git add .` est utilisée pour ajouter le fichier `calculatrice.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 8. Création d'un premier commit pour la fonction `addition` 
+### 6. Création d'un premier commit pour la fonction `addition` 
 
 Créez un commit pour enregistrer la fonction `addition` 
 
@@ -125,7 +93,7 @@ Résultat de l'exécution de la commande :
 
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-### 9. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+### 7. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
 $ git log
@@ -153,7 +121,7 @@ Résultat de l'exécution de la commande :
 
 - Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
 
-### 10. Ajout d'autres fonctions :
+### 8. Ajout d'autres fonctions :
 
 Ajoutez d'autres fonctions de calculatrice dans le fichier `calculatrice.py`, par exemple une fonction `soustraction` :
 
@@ -162,21 +130,21 @@ def soustraction(a, b):
   return a - b
 ```
 
- ### 11. Ajoutez le fichier modifié au suivi :
+ ### 9. Ajoutez le fichier modifié au suivi :
  
 ```
 git add .
 ```
 La commande `git add .` est utilisée pour ajouter le fichier `calculatrice.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 12. Créez un nouveau commit pour enregistrer la fonction `soustraction` :
+### 10. Créez un nouveau commit pour enregistrer la fonction `soustraction` :
 
 ```
 git commit -m "Ajout de la fonction de soustraction"
 ```
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-### 13. Vérification de l'historique des commits :
+### 11. Vérification de l'historique des commits :
 
 Affichez l'historique des commits en utilisant la commande suivante :
 
@@ -186,7 +154,7 @@ git log
 
 L'historique des commits affiché par `git log` vous permet de visualiser les modifications apportées aux fichiers au fil du temps, ainsi que les auteurs et les messages associés à chaque commit. Cela vous aide à comprendre l'évolution du projet et à revenir à des versions spécifiques si nécessaire.
 
-### 14. Ajout d'autres fonctions :
+### 12. Ajout d'autres fonctions :
 
 Ajoutez d'autres fonctions de calculatrice dans le fichier `calculatrice.py`, par exemple une fonction `multiplication` :
 
@@ -195,21 +163,21 @@ def multiplication(a, b):
     return a * b
 ```
 
- ### 15. Ajoutez le fichier modifié au suivi :
+ ### 13. Ajoutez le fichier modifié au suivi :
  
 ```
 git add .
 ```
 La commande `git add .` est utilisée pour ajouter le fichier `calculatrice.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 16. Créez un nouveau commit pour enregistrer la fonction `multiplication` :
+### 14. Créez un nouveau commit pour enregistrer la fonction `multiplication` :
 
 ```
 git commit -m "Ajout de la fonction de multiplication"
 ```
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-### 17. Vérification de l'historique des commits :
+### 15. Vérification de l'historique des commits :
 
 Affichez l'historique des commits en utilisant la commande suivante :
 
@@ -219,7 +187,7 @@ git log
 
 L'historique des commits affiché par `git log` vous permet de visualiser les modifications apportées aux fichiers au fil du temps, ainsi que les auteurs et les messages associés à chaque commit. Cela vous aide à comprendre l'évolution du projet et à revenir à des versions spécifiques si nécessaire.
 
-### 18. Ajout d'autres fonctions :
+### 16. Ajout d'autres fonctions :
 
 Ajoutez d'autres fonctions de calculatrice dans le fichier `calculatrice.py`, par exemple une fonction `division` :
 
@@ -232,21 +200,21 @@ def division(a, b):
 
 ```
 
- ### 19. Ajoutez le fichier modifié au suivi :
+ ### 17. Ajoutez le fichier modifié au suivi :
  
 ```
 git add .
 ```
 La commande `git add .` est utilisée pour ajouter le fichier `calculatrice.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 20. Créez un nouveau commit pour enregistrer la fonction `division` :
+### 18. Créez un nouveau commit pour enregistrer la fonction `division` :
 
 ```
 git commit -m "Ajout de la fonction de division"
 ```
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-### 21. Vérification de l'historique des commits :
+### 19. Vérification de l'historique des commits :
 
 Affichez l'historique des commits en utilisant la commande suivante :
 
@@ -256,7 +224,7 @@ git log
 
 L'historique des commits affiché par `git log` vous permet de visualiser les modifications apportées aux fichiers au fil du temps, ainsi que les auteurs et les messages associés à chaque commit. Cela vous aide à comprendre l'évolution du projet et à revenir à des versions spécifiques si nécessaire.
 
-### 22. Ajout d'autres fonctions :
+### 20. Ajout d'autres fonctions :
 
 La fonction calculatrice() qui affiche une liste de choix à l'utilisateur, lui permet de saisir deux nombres, effectue le calcul correspondant et affiche le résultat.
 
@@ -299,21 +267,21 @@ def calculatrice():
 calculatrice()
 ```
 
- ### 23. Ajoutez le fichier modifié au suivi :
+ ### 21. Ajoutez le fichier modifié au suivi :
  
 ```
 git add .
 ```
 La commande `git add .` est utilisée pour ajouter le fichier `calculatrice.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 24. Créez un nouveau commit pour enregistrer la fonction `calculatrice` :
+### 22. Créez un nouveau commit pour enregistrer la fonction `calculatrice` :
 
 ```
 git commit -m "Ajout de la fonction de calculatrice"
 ```
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-### 25. Vérification de l'historique des commits 
+### 23. Vérification de l'historique des commits 
 
 Affichez l'historique des commits en utilisant la commande suivante :
 
@@ -324,7 +292,7 @@ git log
 L'historique des commits affiché par `git log` vous permet de visualiser les modifications apportées aux fichiers au fil du temps, ainsi que les auteurs et les messages associés à chaque commit. Cela vous aide à comprendre l'évolution du projet et à revenir à des versions spécifiques si nécessaire.
 
 
-### 26. Publier le dépôt sur [GitHub](https://github.com/) 
+### 24. Publier le dépôt sur [GitHub](https://github.com/) 
 
 Créez un nouveau dépôt vide sur une plateforme de gestion de code telle que GitHub.
 
@@ -380,7 +348,7 @@ Résultat de l'exécution de la commande :
   ```
  
 
-### 27. Vérification du dépot et des commits sur [GitHub](https://github.com/) 
+### 25. Vérification du dépot et des commits sur [GitHub](https://github.com/) 
 
 
 Pour vérifier les commits dans un dépôt GitHub, vous pouvez suivre les étapes suivantes :
