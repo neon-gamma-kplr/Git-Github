@@ -50,6 +50,25 @@ Créez un fichier Python vide dans le dossier :
 ```
 $ touch gestion_eleves.py
 ```
+### 4. Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
+
+```
+$ git add .
+```
+
+La commande `git add .` est utilisée pour ajouter le fichier `gestion_eleves.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
+
+### 5. Création d'un premier commit pour le fichier `gestion_eleves.py`
+
+```
+git commit -m "Initial commit"
+```
+
+### 6. Pousser le changement vers le dépot distant 
+
+```
+git push 
+```
 
 ### 4. Création de la nouvelle branche ajouter_eleve
 
@@ -89,7 +108,7 @@ $ git add .
 
 La commande `git add .` est utilisée pour ajouter le fichier `gestion_eleves.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 8. Création d'un premier commit pour la fonction `ajouter_élève` 
+### 8. Création du commit pour la fonction `ajouter_élève` 
 
 Créez un commit pour enregistrer la fonction `ajouter_élève` 
 
