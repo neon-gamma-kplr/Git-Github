@@ -14,30 +14,58 @@ Vous travaillez sur un projet web avec votre binôme. Vous avez créé un dépô
 ## Instructions
 
 ### Binome 1 
-
-1. Créer un nouveau repository Github Vide
-2. Ajouter votre binome en tant que colaborateur
+#### Créer un nouveau repository Github Vide
+#### Ajouter votre binome en tant que colaborateur
    
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/bf3433ae-bc21-4400-b16f-af728985461d)
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/861ec46f-7bfe-4e0b-abb3-82d831829b99)
 
-4. Ouvrir le dépot Github directement sur Gitpod
-5. Créer un ficher python banque.py
-7. Ajoutez le dossier a l'index Git
-8. Création d'un premier commit
-10. Poussez vos modifications vers GitHub.
+#### Ouvrir le dépot Github directement sur Gitpod
+#### Créer un ficher python banque.py
+
+Créez un fichier Python vide dans le dossier :
+
+```
+$ touch banque.py
+```
+
+#### Ajoutez le dossier a l'index Git
+
+```
+$ git add .
+```
+
+La commande `git add .` est utilisée pour ajouter le fichier `devise.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
+
+#### Création d'un premier commit
+
+La commande "git commit -m 'Initial commit'" est utilisée pour créer un nouveau commit dans le référentiel Git. Un commit est une capture instantanée des modifications apportées aux fichiers du projet à un moment précis.
+
+```
+git commit -m "Initial commit"
+```
+
+#### Poussez vos modifications vers GitHub.
+
+La commande "git push" est utilisée pour pousser (envoyer) les commits locaux vers un référentiel distant, généralement situé sur une plateforme de gestion de code telle que GitHub, GitLab ou Bitbucket.
+
+```
+git push 
+```
+
+Lorsque vous exécutez cette commande, Git compare les commits locaux que vous avez effectués avec ceux présents dans le référentiel distant. Il envoie uniquement les nouveaux commits locaux qui n'existent pas encore dans le référentiel distant
 
 ### Binome 2
 
-# Accepter l'invitation de votre binome 
+#### Accepter l'invitation de votre binome 
 
   cliquer sur l'icone de la cloche qui se trouve dans la navbar a droite , puis cliquer sur "accepter l'invitation"
   
   ![image](https://github.com/kplr-training/Git-Github/assets/123757632/bdc164ea-2792-4217-ac9a-a2c74ae35cb7)
   
-# Ouvrir le dépot Github directement sur Gitpod en utilisant l'url du dépot de votre binome
+#### Ouvrir le dépot Github directement sur Gitpod en utilisant l'url du dépot de votre binome
 
-# 4. Création de la nouvelle branche compte_bancaire_binome2
+#### Création de la nouvelle branche compte_bancaire_binome2
 
 Une branche est une ligne de développement isolée qui permet aux utilisateurs de travailler sur des fonctionnalités, des correctifs ou des expérimentations sans affecter la branche principale du projet, généralement appelée "branche principale" ou "branche maître" (par convention, "master" en anglais).
 
@@ -46,7 +74,7 @@ git branch compte_bancaire_binome2
 ```
 La commande "git branch compte_bancaire_binome2" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "compte_bancaire_binome2". 
 
-### 5. Basculer vers la branche compte_bancaire_binome2
+#### Basculer vers la branche compte_bancaire_binome2
 
 La commande "git checkout compte_bancaire_binome2" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "compte_bancaire_binome2".
 
@@ -55,7 +83,7 @@ git checkout compte_bancaire_binome2
 ```
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche spécifiée. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "compte_bancaire_binome2". Les modifications non validées dans votre branche actuelle peuvent être perdues si elles ne sont pas sauvegardées ou validées avant de passer à une autre branche.
 
-### 6. Ouvrez le fichier `banque.py` et ajoutez la fonction CompteBancaire
+#### Ouvrez le fichier `banque.py` et ajoutez la fonction CompteBancaire
 
 ```
 class CompteBancaire:
@@ -80,7 +108,7 @@ class CompteBancaire:
             print("Solde insuffisant.")
 ```
 
-### 7. Ajoutez le fichier `banque.py` au suivi de Git en utilisant la commande suivante 
+#### Ajoutez le fichier `banque.py` au suivi de Git en utilisant la commande suivante 
 
 ```
 $ git add .
@@ -88,7 +116,7 @@ $ git add .
 
 La commande `git add .` est utilisée pour ajouter le fichier `banque.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 8. Création du commit pour la classe `CompteBancaire` 
+#### Création du commit pour la classe `CompteBancaire` 
 
 Créez un commit pour enregistrer la fonction `CompteBancaire` 
 
@@ -105,7 +133,7 @@ Explication de la commande :
 
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-### 9. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+#### Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
 $ git log
@@ -133,7 +161,7 @@ Résultat de l'exécution de la commande :
 
 - Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
 
-### . Pousser le fichier banque.py vers la branche compte_bancaire_binome2
+##### Pousser le fichier banque.py vers la branche compte_bancaire_binome2
 
 Pour pousser votre branche nommée "compte_bancaire_binome2" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
 
@@ -143,7 +171,7 @@ git push origin compte_bancaire_binome2
 
 Cette commande va pousser les commits de votre branche locale "compte_bancaire_binome2" vers la branche "compte_bancaire_binome2" du dépôt distant appelé "origin".
 
-### . Accédez au référentiel distant sur [GitHub](https://github.com/) 
+#### Accédez au référentiel distant sur [GitHub](https://github.com/) 
 
 Cliquez sur le bouton "Compare & Pull Request" (demande de tirage) pour créer une nouvelle demande de tirage.
 
@@ -168,11 +196,11 @@ Pour fusionner le pull request cliquer sur Merge pull request puis Confirm merge
 
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/3b5af0dd-f9f7-4c53-b3c3-6cb63bbb0918)
 
-### . Verifier les commits dans votre repository 
+#### Verifier les commits dans votre repository 
 
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/7a4bb06f-889a-4ca9-83db-876ed451d82d)
 
-### . Récupérer les dernières modifications à partir d'un dépôt distant
+#### Récupérer les dernières modifications à partir d'un dépôt distant
 
 La commande git pull est utilisée pour récupérer les dernières modifications à partir d'un dépôt distant (par exemple, un référentiel Git distant tel que GitHub) et les fusionner avec votre branche locale.
 
@@ -180,7 +208,7 @@ La commande git pull est utilisée pour récupérer les dernières modifications
 git pull 
 ```
 
-# 4. Création de la nouvelle branche gestion_compte_bancaire_binome1
+##### Création de la nouvelle branche gestion_compte_bancaire_binome1
 
 Une branche est une ligne de développement isolée qui permet aux utilisateurs de travailler sur des fonctionnalités, des correctifs ou des expérimentations sans affecter la branche principale du projet, généralement appelée "branche principale" ou "branche maître" (par convention, "master" en anglais).
 
@@ -189,7 +217,7 @@ git branch gestion_compte_bancaire_binome1
 ```
 La commande "git branch gestion_compte_bancaire_binome1" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "gestion_compte_bancaire_binome1". 
 
-### 5. Basculer vers la branche gestion_compte_bancaire_binome1
+##### Basculer vers la branche gestion_compte_bancaire_binome1
 
 La commande "git checkout gestion_compte_bancaire_binome1" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "gestion_compte_bancaire_binome1".
 
@@ -198,7 +226,7 @@ git checkout gestion_compte_bancaire_binome1
 ```
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche spécifiée. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "gestion_compte_bancaire_binome1". Les modifications non validées dans votre branche actuelle peuvent être perdues si elles ne sont pas sauvegardées ou validées avant de passer à une autre branche.
 
-### 6. Ouvrez le fichier `banque.py` et ajoutez la fonction gestion_compte_bancaire()
+##### Ouvrez le fichier `banque.py` et ajoutez la fonction gestion_compte_bancaire()
 
 ```
 def gestion_compte_bancaire():
@@ -268,7 +296,7 @@ if __name__ == "__main__":
     gestion_compte_bancaire()
 ```
 
-### 7. Ajoutez le fichier `banque.py` au suivi de Git en utilisant la commande suivante 
+#### Ajoutez le fichier `banque.py` au suivi de Git en utilisant la commande suivante 
 
 ```
 $ git add .
@@ -276,7 +304,7 @@ $ git add .
 
 La commande `git add .` est utilisée pour ajouter le fichier `banque.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 8. Création du commit pour la fonction `gestion_compte_bancaire` 
+#### Création du commit pour la fonction `gestion_compte_bancaire` 
 
 Créez un commit pour enregistrer la fonction `gestion_compte_bancaire` 
 
@@ -293,7 +321,7 @@ Explication de la commande :
 
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-### 9. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+#### Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
 $ git log
@@ -301,7 +329,7 @@ $ git log
 
 La commande `git log` est utilisée pour afficher l'historique des commits dans le dépôt Git. Lorsque vous exécutez cette commande, Git affiche une liste des commits effectués, triés du plus récent au plus ancien.
 
-### . Pousser le fichier banque.py vers la branche gestion_compte_bancaire_binome1
+#### Pousser le fichier banque.py vers la branche gestion_compte_bancaire_binome1
 
 Pour pousser votre branche nommée "gestion_compte_bancaire_binome1" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
 
@@ -311,7 +339,7 @@ git push origin gestion_compte_bancaire_binome1
 
 Cette commande va pousser les commits de votre branche locale "gestion_compte_bancaire_binome1" vers la branche "gestion_compte_bancaire_binome1" du dépôt distant appelé "origin".
 
-### . Accédez au référentiel distant sur [GitHub](https://github.com/) 
+#### Accédez au référentiel distant sur [GitHub](https://github.com/) 
 
 Cliquez sur le bouton "Compare & Pull Request" (demande de tirage) pour créer une nouvelle demande de tirage.
 
@@ -327,19 +355,30 @@ Votre collaborateur "binome1" peut maintenant examiner votre demande de tirage, 
 
 #### Fusionner et confirmer le pull request 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/915e65f5-53d8-47f5-b28b-1d825befd266)
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/d82ea878-b68d-4edd-916f-d758a963a8db)
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/613dc419-553d-4ca4-a7a6-9404bb9f0618)
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/c745dc51-15b2-403b-b582-88014fe6ba10)
 
 Pour fusionner le pull request cliquer sur Merge pull request puis Confirm merge
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/3b5af0dd-f9f7-4c53-b3c3-6cb63bbb0918)
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/882fcdf7-dd68-4e0e-963b-b76af7ff77f4)
 
-### . Verifier les commits dans votre repository 
+#### Verifier les commits dans votre repository 
 
-![image](https://github.com/kplr-training/Git-Github/assets/123757632/7a4bb06f-889a-4ca9-83db-876ed451d82d)
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/8a3b5875-518b-48a2-a658-1cd52b327a38)
 
-### . Récupérer les dernières modifications à partir d'un dépôt distant
+#### Basculer vers la branche principale 
+
+La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
+
+```
+git checkout main
+```
+
+Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
+
+
+#### Récupérer les dernières modifications à partir d'un dépôt distant
 
 La commande git pull est utilisée pour récupérer les dernières modifications à partir d'un dépôt distant (par exemple, un référentiel Git distant tel que GitHub) et les fusionner avec votre branche locale.
 
