@@ -28,6 +28,8 @@ Connectez-vous à votre compte GitHub et cliquez sur le bouton "New" pour créer
 
 #### Ouvrir le dépot Github directement sur Gitpod
 
+Etapes pour création et utilisation de [Gitpod](https://github.com/kplr-training/Git-Github/blob/main/Ateliers/Gitpod%20101.md).
+
 #### Créer un ficher python banque.py
 
 Créez un fichier Python vide dans le dossier :
