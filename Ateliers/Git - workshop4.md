@@ -14,13 +14,20 @@ Vous travaillez sur un projet web avec votre binôme. Vous avez créé un dépô
 ## Instructions
 
 ### Binome 1 
+
 #### Créer un nouveau repository Github Vide
+
+Connectez-vous à votre compte GitHub et cliquez sur le bouton "New" pour créer un nouveau dépôt. Donnez un nom et une description au dépôt et choisissez les options appropriées, telles que la visibilité et le fichier README.md. Cliquez sur le bouton "Create repository" pour créer le nouveau dépôt.
+
+![image](https://user-images.githubusercontent.com/123757632/221904279-c5a2d920-5b45-4193-b599-1cc21daae210.png)
+
 #### Ajouter votre binome en tant que colaborateur
    
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/bf3433ae-bc21-4400-b16f-af728985461d)
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/861ec46f-7bfe-4e0b-abb3-82d831829b99)
 
 #### Ouvrir le dépot Github directement sur Gitpod
+
 #### Créer un ficher python banque.py
 
 Créez un fichier Python vide dans le dossier :
