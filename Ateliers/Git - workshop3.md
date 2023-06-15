@@ -9,29 +9,17 @@ examen avant de les fusionner avec la branche principale. Ce processus vous perm
 
 ## Instructions
 
-### 1. Configuration initiale :
+### Créer un nouveau repository Github Vide
 
-Ouvrez votre terminal.
+Connectez-vous à votre compte GitHub et cliquez sur le bouton "New" pour créer un nouveau dépôt. Donnez un nom et une description au dépôt et choisissez les options appropriées, telles que la visibilité et le fichier README.md. Cliquez sur le bouton "Create repository" pour créer le nouveau dépôt.
 
-Configurez votre nom d'utilisateur en utilisant la commande suivante :
+![image](https://user-images.githubusercontent.com/123757632/221904279-c5a2d920-5b45-4193-b599-1cc21daae210.png)
 
-```
-$ git config --global user.name "Votre nom d'utilisateur"
-```
-     
-La commande git config --global user.name "Votre nom d'utilisateur" vous permet de définir votre nom d'utilisateur. Remplacez "Votre nom d'utilisateur" par votre nom d'utilisateur réel. 
+### Ouvrir le dépot Github directement sur Gitpod
 
-Configurez votre adresse e-mail en utilisant la commande suivante :
+Etapes pour création et utilisation de [Gitpod](https://github.com/kplr-training/Git-Github/blob/main/Ateliers/Gitpod%20101.md).
 
-```
-$ git config --global user.email "Votre adresse e-mail"
-```
-
-La commande git config --global user.email "Votre adresse e-mail" vous permet de définir votre adresse e-mail. Remplacez "Votre adresse e-mail" par votre adresse e-mail réelle.
-
-Assurez-vous de remplacer les valeurs entre guillemets par vos propres informations. Une fois que vous avez exécuté ces commandes, votre nom d'utilisateur et votre adresse e-mail seront configurés globalement dans Git.
-
-### 2. Vérifier que la configuration de votre nom d'utilisateur et de votre adresse e-mail a été effectuée avec succès. 
+### Vérifier que la configuration de votre nom d'utilisateur et de votre adresse e-mail a été effectuée avec succès. 
 
 Vous pouvez utiliser la commande `git config --global --list` pour afficher la liste des paramètres de configuration globale de Git, y compris votre nom d'utilisateur et votre adresse e-mail.
 
@@ -45,7 +33,7 @@ Cela affichera une liste des paramètres de configuration globale, y compris vot
 
 Assurez-vous de rechercher les lignes contenant **`user.name` et `user.email`** dans la sortie de la commande pour confirmer que vos informations de configuration sont correctement enregistrées.
 
-### 3. Création d'un fichier Python
+### Création d'un fichier Python
 
 Créez un fichier Python vide dans le dossier :
 
@@ -53,7 +41,7 @@ Créez un fichier Python vide dans le dossier :
 $ touch devise.py
 ```
 
-### 4. Ajoutez le fichier `devise.py` au suivi de Git en utilisant la commande suivante 
+### Ajoutez le fichier `devise.py` au suivi de Git en utilisant la commande suivante 
 
 ```
 $ git add .
@@ -61,7 +49,7 @@ $ git add .
 
 La commande `git add .` est utilisée pour ajouter le fichier `devise.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 5. Création d'un premier commit pour le fichier `devise.py`
+### Création d'un premier commit pour le fichier `devise.py`
 
 La commande "git commit -m 'Initial commit'" est utilisée pour créer un nouveau commit dans le référentiel Git. Un commit est une capture instantanée des modifications apportées aux fichiers du projet à un moment précis.
 
@@ -69,7 +57,7 @@ La commande "git commit -m 'Initial commit'" est utilisée pour créer un nouvea
 git commit -m "Initial commit"
 ```
 
-### 6. Pousser le changement vers le dépot distant 
+### Pousser le changement vers le dépot distant 
 
 La commande "git push" est utilisée pour pousser (envoyer) les commits locaux vers un référentiel distant, généralement situé sur une plateforme de gestion de code telle que GitHub, GitLab ou Bitbucket.
 
@@ -79,7 +67,7 @@ git push
 
 Lorsque vous exécutez cette commande, Git compare les commits locaux que vous avez effectués avec ceux présents dans le référentiel distant. Il envoie uniquement les nouveaux commits locaux qui n'existent pas encore dans le référentiel distant
 
-### 4. Création de la nouvelle branche convertir
+### Création de la nouvelle branche convertir
 
 Une branche est une ligne de développement isolée qui permet aux utilisateurs de travailler sur des fonctionnalités, des correctifs ou des expérimentations sans affecter la branche principale du projet, généralement appelée "branche principale" ou "branche maître" (par convention, "master" en anglais).
 
@@ -88,7 +76,7 @@ git branch convertir
 ```
 La commande "git branch convertir" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "convertir". 
 
-### 5. Basculer vers la branche convertir
+### Basculer vers la branche convertir
 
 La commande "git checkout convertir" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "convertir".
 
@@ -97,7 +85,7 @@ git checkout convertir
 ```
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche spécifiée. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "convertir". Les modifications non validées dans votre branche actuelle peuvent être perdues si elles ne sont pas sauvegardées ou validées avant de passer à une autre branche.
 
-### 6. Ouvrez le fichier `devise.py` et ajoutez la fonction pour convertir une devise
+### Ouvrez le fichier `devise.py` et ajoutez la fonction pour convertir une devise
 
 ```
 def convertir(montant, taux):
@@ -105,7 +93,7 @@ def convertir(montant, taux):
 ```
 La fonction convertir qui prend deux paramètres : montant et taux. Cette fonction effectue une opération de conversion de devise en multipliant le montant donné par le taux de change spécifié.
 
-### 7. Ajoutez le fichier `devise.py` au suivi de Git en utilisant la commande suivante 
+### Ajoutez le fichier `devise.py` au suivi de Git en utilisant la commande suivante 
 
 ```
 $ git add .
@@ -113,7 +101,7 @@ $ git add .
 
 La commande `git add .` est utilisée pour ajouter le fichier `devise.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 8. Création du commit pour la fonction `convertir` 
+### Création du commit pour la fonction `convertir` 
 
 Créez un commit pour enregistrer la fonction `convertir` 
 
@@ -142,7 +130,7 @@ Résultat de l'exécution de la commande :
 
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-### 9. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+### Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
 $ git log
@@ -170,7 +158,7 @@ Résultat de l'exécution de la commande :
 
 - Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
 
-### . Pousser le fichier devise.py vers la branche convertir
+### Pousser le fichier devise.py vers la branche convertir
 
 Pour pousser votre branche nommée "convertir" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
 
@@ -180,7 +168,7 @@ git push origin convertir
 
 Cette commande va pousser les commits de votre branche locale "convertir" vers la branche "convertir" du dépôt distant appelé "origin". 
 
-### . Accédez au référentiel distant sur [GitHub](https://github.com/) 
+### Accédez au référentiel distant sur [GitHub](https://github.com/) 
 
 Cliquez sur le bouton "Compare & Pull Request" (demande de tirage) pour créer une nouvelle demande de tirage.
 
@@ -200,11 +188,11 @@ Pour fusionner le pull request cliquer sur Merge pull request puis Confirm merge
 
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/5283789c-e846-4e0d-9be7-ee3b6a67ddc1)
 
-### . Verifier les commits dans votre repository 
+### Verifier les commits dans votre repository 
 
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/b08618ff-09cf-4b7f-8cb7-d41eb8908fc1)
 
-### 10. Basculer vers la branche principale 
+### Basculer vers la branche principale 
 
 La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
 
@@ -214,7 +202,7 @@ git checkout main
 
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
 
-### . Récupérer les dernières modifications à partir d'un dépôt distant
+### Récupérer les dernières modifications à partir d'un dépôt distant
 
 La commande git pull est utilisée pour récupérer les dernières modifications à partir d'un dépôt distant (par exemple, un référentiel Git distant tel que GitHub) et les fusionner avec votre branche locale.
 
@@ -229,7 +217,7 @@ Récupère les nouvelles modifications du dépôt distant.
 Fusionne les modifications récupérées avec votre branche locale.
 Cela permet de mettre à jour votre branche locale avec les dernières modifications disponibles dans le dépôt distant. 
 
-### 4. Création de la nouvelle branche convertisseur
+### Création de la nouvelle branche convertisseur
 
 Une branche est une ligne de développement isolée qui permet aux utilisateurs de travailler sur des fonctionnalités, des correctifs ou des expérimentations sans affecter la branche principale du projet, généralement appelée "branche principale" ou "branche maître" (par convention, "master" en anglais).
 
@@ -238,7 +226,7 @@ git branch convertisseur
 ```
 La commande "git branch convertisseur" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "convertisseur". 
 
-### 5. Basculer vers la branche convertisseur
+### Basculer vers la branche convertisseur
 
 La commande "git checkout convertisseur" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "convertisseur".
 
@@ -247,7 +235,7 @@ git checkout convertisseur
 ```
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche spécifiée. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "convertisseur". Les modifications non validées dans votre branche actuelle peuvent être perdues si elles ne sont pas sauvegardées ou validées avant de passer à une autre branche.
 
-### 6. Ouvrez le fichier `devise.py` et ajoutez la fonction convertisseur()
+### Ouvrez le fichier `devise.py` et ajoutez la fonction convertisseur()
 
 ```
 def convertisseur():
@@ -284,7 +272,7 @@ if __name__ == "__main__":
 ```
 La fonction convertisseur() est une fonction qui permet à l'utilisateur d'entrer un montant, une devise source et une devise cible, puis effectue la conversion du montant de la devise source vers la devise cible en utilisant les taux de change prédéfinis.
 
-### 7. Ajoutez le fichier `devise.py` au suivi de Git en utilisant la commande suivante 
+### Ajoutez le fichier `devise.py` au suivi de Git en utilisant la commande suivante 
 
 ```
 $ git add .
@@ -292,7 +280,7 @@ $ git add .
 
 La commande `git add .` est utilisée pour ajouter le fichier `devise.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 8. Création du commit pour la fonction `convertisseur` 
+### Création du commit pour la fonction `convertisseur` 
 
 Créez un commit pour enregistrer la fonction `convertisseur` 
 
@@ -307,21 +295,7 @@ Explication de la commande :
 * `git commit` est la commande principale pour créer un commit.
 * `-m "Ajout de la fonction convertisseur"` est un paramètre qui permet de spécifier le message du commit. Le message doit être placé entre guillemets.
 
-Résultat de l'exécution de la commande :
-
-- Si le commit est créé avec succès, Git affiche des informations sur le commit, telles que l'identifiant unique du commit (SHA-1), l'auteur, la date et le message du commit.
-
-- Par exemple :
-
-```
-[main f7fde4f] Ajout de la fonction d'addition
-1 file changed, 10 insertions(+)
-```
-- Le commit est enregistré dans l'historique du dépôt Git, capturant ainsi les modifications apportées aux fichiers à ce stade.
-
-Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
-
-### 9. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+### Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
 $ git log
@@ -329,27 +303,7 @@ $ git log
 
 La commande `git log` est utilisée pour afficher l'historique des commits dans le dépôt Git. Lorsque vous exécutez cette commande, Git affiche une liste des commits effectués, triés du plus récent au plus ancien.
 
-Résultat de l'exécution de la commande :
-
-- Chaque commit est affiché avec des informations telles que l'identifiant du commit (SHA-1), l'auteur, la date et le message du commit.
-- Par exemple :
-  ```
-  commit f7fde4f82d5e8a7574680a8e138e41c05d1e3d6e
-  Author: Votre nom <votre@email.com>
-  Date:   Lun. Sept. 13 10:00:00 2023 +0200
-
-      Ajout de la fonction d'addition
-
-  commit 2cfd3b1e8949a7b894ca57182a3b14db6c0ee43f
-  Author: Autre contributeur <autre@email.com>
-  Date:   Lun. Sept. 12 15:30:00 2023 +0200
-
-      Correction de bug dans la fonction de soustraction
-  ```
-
-- Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
-
-### . Pousser le fichier devise.py vers la branche convertisseur
+### Pousser le fichier devise.py vers la branche convertisseur
 
 Pour pousser votre branche nommée "convertisseur" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
 
@@ -359,7 +313,7 @@ git push origin convertisseur
 
 Cette commande va pousser les commits de votre branche locale "convertisseur" vers la branche "convertisseur" du dépôt distant appelé "origin". 
 
-### . Accédez au référentiel distant sur [GitHub](https://github.com/) 
+### Accédez au référentiel distant sur [GitHub](https://github.com/) 
 
 Cliquez sur le bouton "Compare & Pull Request" (demande de tirage) pour créer une nouvelle demande de tirage.
 
@@ -379,11 +333,11 @@ Pour fusionner le pull request cliquer sur Merge pull request puis Confirm merge
 
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/799bba42-c29d-4250-8652-4b38e29164ae)
 
-### . Verifier les commits dans votre repository 
+### Verifier les commits dans votre repository 
 
 ![image](https://github.com/kplr-training/Git-Github/assets/123757632/bc0cc700-a4ad-4f70-96ef-f58a0c3f751b)
 
-### 10. Basculer vers la branche principale 
+### Basculer vers la branche principale 
 
 La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
 
@@ -393,14 +347,13 @@ git checkout main
 
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
 
-### . Récupérer les dernières modifications à partir d'un dépôt distant
+### Récupérer les dernières modifications à partir d'un dépôt distant
 
 La commande git pull est utilisée pour récupérer les dernières modifications à partir d'un dépôt distant (par exemple, un référentiel Git distant tel que GitHub) et les fusionner avec votre branche locale.
 
 ```
 git pull 
 ```
-
 
 Lorsque vous exécutez git pull, Git effectue les actions suivantes :
 
