@@ -54,7 +54,7 @@ La commande `git add .` est utilisée pour ajouter le fichier `devise.py` au sui
 La commande "git commit -m 'Initial commit'" est utilisée pour créer un nouveau commit dans le référentiel Git. Un commit est une capture instantanée des modifications apportées aux fichiers du projet à un moment précis.
 
 ```
-git commit -m "Initial commit"
+$ git commit -m "Initial commit"
 ```
 
 ### Pousser le changement vers le dépot distant 
