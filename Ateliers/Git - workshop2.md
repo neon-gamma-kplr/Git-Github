@@ -1,4 +1,4 @@
-# GIT
+# GIT - Branch
 
 ## Objectif
 L'objectif de cet atelier est d'approfondir vos compétences en travaillant avec les branches Git. 
