@@ -14,6 +14,7 @@ Vous travaillez sur un projet web avec votre binôme. Vous avez créé un dépô
 ## Instructions
 
 ### Binome 1 
+
 1. Créer un nouveau repository Github Vide
 2. Ajouter votre binome en tant que colaborateur
    
@@ -27,6 +28,7 @@ Vous travaillez sur un projet web avec votre binôme. Vous avez créé un dépô
 10. Poussez vos modifications vers GitHub.
 
 ### Binome 2
+
 # Accepter l'invitation de votre binome 
 
   cliquer sur l'icone de la cloche qui se trouve dans la navbar a droite , puis cliquer sur "accepter l'invitation"
@@ -77,8 +79,6 @@ class CompteBancaire:
         else:
             print("Solde insuffisant.")
 ```
-La fonction ajouter_élève permet à l'utilisateur d'entrer l'identifiant et le nom d'un nouvel élève, puis ajoute ces informations au dictionnaire élèves.
-
 
 ### 7. Ajoutez le fichier `banque.py` au suivi de Git en utilisant la commande suivante 
 
@@ -143,24 +143,206 @@ git push origin compte_bancaire_binome2
 
 Cette commande va pousser les commits de votre branche locale "compte_bancaire_binome2" vers la branche "compte_bancaire_binome2" du dépôt distant appelé "origin".
 
-10. Créez une branche et publiez la.
-11. Ajoutez du text au fichier *chat.html.
-12. Ajoutez le fichier a l'index Git.
-13. Commitez les modifications avec le message "Ajout du text - Binome 2".
-14. Poussez le dernier commit.
-15. Créez un Pull Request.
+### . Accédez au référentiel distant sur [GitHub](https://github.com/) 
 
-### Binome 1
-16. Acceptez le Pull Request.
-17. Mettez a jour votre copie locale.
-18. Créez une branche et publiez la.
-19. Ajoutez du text au fichier *chat.html.
-20. Ajoutez le fichier a l'index Git.
-21. Commitez les modifications avec le message "Ajout du text - Binome 1".
-22. Poussez le dernier commit.
-23. Créez un Pull Request sur GitHub
+Cliquez sur le bouton "Compare & Pull Request" (demande de tirage) pour créer une nouvelle demande de tirage.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/03e9d5da-bdf9-43f6-8d8d-dda9570014bc)
+
+
+Ajoutez une description pour votre demande de tirage et soumettez-la.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/931e21e2-c6bc-4cb3-83c0-7ad1d1ea452b)
+
+Votre collaborateur "binome1" peut maintenant examiner votre demande de tirage, ajouter des commentaires et demander des modifications supplémentaires si nécessaire.
+
+### Binome 1 
+
+#### Fusionner et confirmer le pull request 
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/915e65f5-53d8-47f5-b28b-1d825befd266)
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/613dc419-553d-4ca4-a7a6-9404bb9f0618)
+
+Pour fusionner le pull request cliquer sur Merge pull request puis Confirm merge
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/3b5af0dd-f9f7-4c53-b3c3-6cb63bbb0918)
+
+### . Verifier les commits dans votre repository 
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/7a4bb06f-889a-4ca9-83db-876ed451d82d)
+
+### . Récupérer les dernières modifications à partir d'un dépôt distant
+
+La commande git pull est utilisée pour récupérer les dernières modifications à partir d'un dépôt distant (par exemple, un référentiel Git distant tel que GitHub) et les fusionner avec votre branche locale.
+
+```
+git pull 
+```
+
+# 4. Création de la nouvelle branche gestion_compte_bancaire_binome1
+
+Une branche est une ligne de développement isolée qui permet aux utilisateurs de travailler sur des fonctionnalités, des correctifs ou des expérimentations sans affecter la branche principale du projet, généralement appelée "branche principale" ou "branche maître" (par convention, "master" en anglais).
+
+```
+git branch gestion_compte_bancaire_binome1
+```
+La commande "git branch gestion_compte_bancaire_binome1" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "gestion_compte_bancaire_binome1". 
+
+### 5. Basculer vers la branche gestion_compte_bancaire_binome1
+
+La commande "git checkout gestion_compte_bancaire_binome1" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "gestion_compte_bancaire_binome1".
+
+```
+git checkout gestion_compte_bancaire_binome1
+```
+Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche spécifiée. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "gestion_compte_bancaire_binome1". Les modifications non validées dans votre branche actuelle peuvent être perdues si elles ne sont pas sauvegardées ou validées avant de passer à une autre branche.
+
+### 6. Ouvrez le fichier `banque.py` et ajoutez la fonction gestion_compte_bancaire()
+
+```
+def gestion_compte_bancaire():
+    compte1 = CompteBancaire("123456", 5000)
+    compte2 = CompteBancaire("789012", 3000)
+
+    print("Bienvenue dans le système de gestion des comptes bancaires.")
+
+    while True:
+        print("\nQue souhaitez-vous faire ?")
+        print("1. Déposer de l'argent")
+        print("2. Retirer de l'argent")
+        print("3. Transférer de l'argent")
+        print("4. Quitter")
+
+        choix = input("Votre choix (1-4) : ")
+
+        if choix == "1":
+            montant = float(input("Montant à déposer : "))
+            numero_compte = input("Numéro de compte bancaire : ")
+            
+            if numero_compte == compte1.numero_compte:
+                compte1.deposer(montant)
+                print(f"{montant}€ ont été déposés sur le compte {compte1.numero_compte}.")
+            elif numero_compte == compte2.numero_compte:
+                compte2.deposer(montant)
+                print(f"{montant}€ ont été déposés sur le compte {compte2.numero_compte}.")
+            else:
+                print("Numéro de compte invalide.")
+
+        elif choix == "2":
+            montant = float(input("Montant à retirer : "))
+            numero_compte = input("Numéro de compte bancaire : ")
+            
+            if numero_compte == compte1.numero_compte:
+                compte1.retirer(montant)
+                print(f"{montant}€ ont été retirés du compte {compte1.numero_compte}.")
+            elif numero_compte == compte2.numero_compte:
+                compte2.retirer(montant)
+                print(f"{montant}€ ont été retirés du compte {compte2.numero_compte}.")
+            else:
+                print("Numéro de compte invalide.")
+
+        elif choix == "3":
+            montant = float(input("Montant à transférer : "))
+            numero_compte_source = input("Numéro de compte bancaire source : ")
+            numero_compte_destinataire = input("Numéro de compte bancaire destinataire : ")
+
+            if numero_compte_source == compte1.numero_compte and numero_compte_destinataire == compte2.numero_compte:
+                compte1.transferer(compte2, montant)
+                print(f"{montant}€ ont été transférés du compte {compte1.numero_compte} au compte {compte2.numero_compte}.")
+            elif numero_compte_source == compte2.numero_compte and numero_compte_destinataire == compte1.numero_compte:
+                compte2.transferer(compte1, montant)
+                print(f"{montant}€ ont été transférés du compte {compte2.numero_compte} au compte {compte1.numero_compte}.")
+            else:
+                print("Numéros de compte invalides.")
+
+        elif choix == "4":
+            print("Merci d'avoir utilisé notre système de gestion des comptes bancaires. Au revoir !")
+            break
+
+        else:
+            print("Choix invalide. Veuillez sélectionner une option valide.")
+
+
+if __name__ == "__main__":
+    gestion_compte_bancaire()
+```
+
+### 7. Ajoutez le fichier `banque.py` au suivi de Git en utilisant la commande suivante 
+
+```
+$ git add .
+```
+
+La commande `git add .` est utilisée pour ajouter le fichier `banque.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
+
+### 8. Création du commit pour la fonction `gestion_compte_bancaire` 
+
+Créez un commit pour enregistrer la fonction `gestion_compte_bancaire` 
+
+```
+$ git commit -m "Ajout de la fonction gestion_compte_bancaire()"
+```
+
+La commande `git commit -m "Ajout de la fonction gestion_compte_bancaire()"` est utilisée pour créer un nouveau commit dans le dépôt Git. Un commit est une capture instantanée des modifications apportées aux fichiers suivis par Git.
+
+Explication de la commande :
+
+* `git commit` est la commande principale pour créer un commit.
+* `-m "Ajout de la fonction gestion_compte_bancaire()"` est un paramètre qui permet de spécifier le message du commit. Le message doit être placé entre guillemets.
+
+Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
+
+### 9. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+
+```
+$ git log
+```
+
+La commande `git log` est utilisée pour afficher l'historique des commits dans le dépôt Git. Lorsque vous exécutez cette commande, Git affiche une liste des commits effectués, triés du plus récent au plus ancien.
+
+### . Pousser le fichier banque.py vers la branche gestion_compte_bancaire_binome1
+
+Pour pousser votre branche nommée "gestion_compte_bancaire_binome1" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
+
+```
+git push origin gestion_compte_bancaire_binome1
+```
+
+Cette commande va pousser les commits de votre branche locale "gestion_compte_bancaire_binome1" vers la branche "gestion_compte_bancaire_binome1" du dépôt distant appelé "origin".
+
+### . Accédez au référentiel distant sur [GitHub](https://github.com/) 
+
+Cliquez sur le bouton "Compare & Pull Request" (demande de tirage) pour créer une nouvelle demande de tirage.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/6f4597fe-dfc5-49c1-a9d3-35c08f1342f5)
+
+Ajoutez une description pour votre demande de tirage et soumettez-la.
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/b61e53b8-3897-48da-95dc-c9f17c7d1606)
+
+Votre collaborateur "binome1" peut maintenant examiner votre demande de tirage, ajouter des commentaires et demander des modifications supplémentaires si nécessaire.
 
 ### Binome 2
-24. Acceptez le Pull Request.
-25. Mettez a jour votre copie locale.
 
+#### Fusionner et confirmer le pull request 
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/915e65f5-53d8-47f5-b28b-1d825befd266)
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/613dc419-553d-4ca4-a7a6-9404bb9f0618)
+
+Pour fusionner le pull request cliquer sur Merge pull request puis Confirm merge
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/3b5af0dd-f9f7-4c53-b3c3-6cb63bbb0918)
+
+### . Verifier les commits dans votre repository 
+
+![image](https://github.com/kplr-training/Git-Github/assets/123757632/7a4bb06f-889a-4ca9-83db-876ed451d82d)
+
+### . Récupérer les dernières modifications à partir d'un dépôt distant
+
+La commande git pull est utilisée pour récupérer les dernières modifications à partir d'un dépôt distant (par exemple, un référentiel Git distant tel que GitHub) et les fusionner avec votre branche locale.
+
+```
+git pull 
+```
