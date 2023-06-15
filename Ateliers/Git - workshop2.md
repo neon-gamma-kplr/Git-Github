@@ -7,29 +7,17 @@ Les branches sont utiles pour développer des fonctionnalités de manière isol�
 
 ## Instructions
 
-### 1. Configuration initiale :
+### Créer un nouveau repository Github Vide
 
-Ouvrez votre terminal.
+Connectez-vous à votre compte GitHub et cliquez sur le bouton "New" pour créer un nouveau dépôt. Donnez un nom et une description au dépôt et choisissez les options appropriées, telles que la visibilité et le fichier README.md. Cliquez sur le bouton "Create repository" pour créer le nouveau dépôt.
 
-Configurez votre nom d'utilisateur en utilisant la commande suivante :
+![image](https://user-images.githubusercontent.com/123757632/221904279-c5a2d920-5b45-4193-b599-1cc21daae210.png)
 
-```
-$ git config --global user.name "Votre nom d'utilisateur"
-```
-     
-La commande git config --global user.name "Votre nom d'utilisateur" vous permet de définir votre nom d'utilisateur. Remplacez "Votre nom d'utilisateur" par votre nom d'utilisateur réel. 
+### Ouvrir le dépot Github directement sur Gitpod
 
-Configurez votre adresse e-mail en utilisant la commande suivante :
+Etapes pour création et utilisation de [Gitpod](https://github.com/kplr-training/Git-Github/blob/main/Ateliers/Gitpod%20101.md).
 
-```
-$ git config --global user.email "Votre adresse e-mail"
-```
-
-La commande git config --global user.email "Votre adresse e-mail" vous permet de définir votre adresse e-mail. Remplacez "Votre adresse e-mail" par votre adresse e-mail réelle.
-
-Assurez-vous de remplacer les valeurs entre guillemets par vos propres informations. Une fois que vous avez exécuté ces commandes, votre nom d'utilisateur et votre adresse e-mail seront configurés globalement dans Git.
-
-### 2. Vérifier que la configuration de votre nom d'utilisateur et de votre adresse e-mail a été effectuée avec succès. 
+### Vérifier que la configuration de votre nom d'utilisateur et de votre adresse e-mail
 
 Vous pouvez utiliser la commande `git config --global --list` pour afficher la liste des paramètres de configuration globale de Git, y compris votre nom d'utilisateur et votre adresse e-mail.
 
@@ -43,7 +31,7 @@ Cela affichera une liste des paramètres de configuration globale, y compris vot
 
 Assurez-vous de rechercher les lignes contenant **`user.name` et `user.email`** dans la sortie de la commande pour confirmer que vos informations de configuration sont correctement enregistrées.
 
-### 3. Création d'un fichier Python
+### Création d'un fichier Python
 
 Créez un fichier Python vide dans le dossier :
 
@@ -51,7 +39,7 @@ Créez un fichier Python vide dans le dossier :
 $ touch gestion_eleves.py
 ```
 
-### 4. Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
+### Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
 
 ```
 $ git add .
@@ -59,7 +47,7 @@ $ git add .
 
 La commande `git add .` est utilisée pour ajouter le fichier `gestion_eleves.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 5. Création d'un premier commit pour le fichier `gestion_eleves.py`
+### Création d'un premier commit pour le fichier `gestion_eleves.py`
 
 La commande "git commit -m 'Initial commit'" est utilisée pour créer un nouveau commit dans le référentiel Git. Un commit est une capture instantanée des modifications apportées aux fichiers du projet à un moment précis.
 
@@ -67,7 +55,7 @@ La commande "git commit -m 'Initial commit'" est utilisée pour créer un nouvea
 git commit -m "Initial commit"
 ```
 
-### 6. Pousser le changement vers le dépot distant 
+### Pousser le changement vers le dépot distant 
 
 La commande "git push" est utilisée pour pousser (envoyer) les commits locaux vers un référentiel distant, généralement situé sur une plateforme de gestion de code telle que GitHub, GitLab ou Bitbucket.
 
@@ -77,7 +65,7 @@ git push
 
 Lorsque vous exécutez cette commande, Git compare les commits locaux que vous avez effectués avec ceux présents dans le référentiel distant. Il envoie uniquement les nouveaux commits locaux qui n'existent pas encore dans le référentiel distant
 
-### 4. Création de la nouvelle branche ajouter_eleve
+### Création de la nouvelle branche ajouter_eleve
 
 Une branche est une ligne de développement isolée qui permet aux utilisateurs de travailler sur des fonctionnalités, des correctifs ou des expérimentations sans affecter la branche principale du projet, généralement appelée "branche principale" ou "branche maître" (par convention, "master" en anglais).
 
@@ -86,7 +74,7 @@ git branch ajouter_eleve
 ```
 La commande "git branch ajouter_eleve" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "ajouter_eleve". 
 
-### 5. Basculer vers la branche ajouter_eleve
+### Basculer vers la branche ajouter_eleve
 
 La commande "git checkout ajouter_eleve" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "ajouter_eleve".
 
@@ -95,7 +83,7 @@ git checkout ajouter_eleve
 ```
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche spécifiée. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "ajouter_eleve". Les modifications non validées dans votre branche actuelle peuvent être perdues si elles ne sont pas sauvegardées ou validées avant de passer à une autre branche.
 
-### 6. Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour ajouter un élève
+### Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour ajouter un élève
 
 ```
 def ajouter_élève():
@@ -107,7 +95,7 @@ def ajouter_élève():
 La fonction ajouter_élève permet à l'utilisateur d'entrer l'identifiant et le nom d'un nouvel élève, puis ajoute ces informations au dictionnaire élèves.
 
 
-### 7. Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
+### Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
 
 ```
 $ git add .
@@ -115,7 +103,7 @@ $ git add .
 
 La commande `git add .` est utilisée pour ajouter le fichier `gestion_eleves.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 8. Création du commit pour la fonction `ajouter_élève` 
+### Création du commit pour la fonction `ajouter_élève` 
 
 Créez un commit pour enregistrer la fonction `ajouter_élève` 
 
@@ -144,7 +132,7 @@ Résultat de l'exécution de la commande :
 
 Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
 
-### 9. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+### Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
 $ git log
@@ -172,7 +160,7 @@ Résultat de l'exécution de la commande :
 
 - Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
 
-### . Pousser le fichier gestion_eleves.py vers la branche ajouter_eleve
+### Pousser le fichier gestion_eleves.py vers la branche ajouter_eleve
 
 Pour pousser votre branche nommée "ajouter_eleve" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
 
@@ -182,7 +170,7 @@ git push origin ajouter_eleve
 
 Cette commande va pousser les commits de votre branche locale "ajouter_eleve" vers la branche "ajouter_eleve" du dépôt distant appelé "origin". 
 
-### 10. Basculer vers la branche principale 
+### Basculer vers la branche principale 
 
 La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
 
@@ -192,7 +180,7 @@ git checkout main
 
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
 
-### 11. Fudionner la branche "ajouter_eleve" avec la branche "main"
+### Fudionner la branche "ajouter_eleve" avec la branche "main"
 
 La commande "git merge ajouter_eleve" fusionne la branche "ajouter_eleve" dans la branche actuelle. Plus précisément, elle incorpore les modifications de la branche "ajouter_eleve" dans la branche courante.
 
@@ -206,14 +194,14 @@ En résumé, la commande "git merge ajouter_eleve" fusionne les modifications de
 
 **REMARQUE : La fonction ajouter_eleve se trouve maintenant dans le ficher "gestion_eleve" dans la branche principale "main"**
 
-### 12. Création de la nouvelle branche modifier_eleve
+### Création de la nouvelle branche modifier_eleve
 
 ```
 git branch modifier_eleve
 ```
 La commande "git branch modifier_eleve" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "modifier_eleve". 
 
-### 13. Basculer vers la branche modifier_eleve
+### Basculer vers la branche modifier_eleve
 
 La commande "git checkout modifier_eleve" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "modifier_eleve".
 
@@ -221,7 +209,7 @@ La commande "git checkout modifier_eleve" est utilisée pour basculer vers une b
 git checkout modifier_eleve
 ```
 
-### 16. Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour modifier un élève
+### Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour modifier un élève
 
 ```
 def modifier_élève():
@@ -236,7 +224,7 @@ def modifier_élève():
 
 La fonction modifier_élève permet à l'utilisateur d'entrer l'identifiant et le nom d'un nouvel élève, puis modifie ces informations au dictionnaire élèves.
 
-### 17. Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
+### Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
 
 ```
 $ git add .
@@ -244,7 +232,7 @@ $ git add .
 
 La commande `git add .` est utilisée pour ajouter le fichier `gestion_eleves.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 18. Création d'un premier commit pour la fonction `modifier_élève` 
+### Création d'un premier commit pour la fonction `modifier_élève` 
 
 Créez un commit pour enregistrer la fonction `modifier_élève` 
 
@@ -259,21 +247,7 @@ Explication de la commande :
 * `git commit` est la commande principale pour créer un commit.
 * `-m "Ajout de la fonction de modifier_élève"` est un paramètre qui permet de spécifier le message du commit. Le message doit être placé entre guillemets.
 
-Résultat de l'exécution de la commande :
-
-- Si le commit est créé avec succès, Git affiche des informations sur le commit, telles que l'identifiant unique du commit (SHA-1), l'auteur, la date et le message du commit.
-
-- Par exemple :
-
-```
-[main f7fde4f] Ajout de la fonction d'addition
-1 file changed, 10 insertions(+)
-```
-- Le commit est enregistré dans l'historique du dépôt Git, capturant ainsi les modifications apportées aux fichiers à ce stade.
-
-Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
-
-### 19. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+### Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
 $ git log
@@ -281,27 +255,7 @@ $ git log
 
 La commande `git log` est utilisée pour afficher l'historique des commits dans le dépôt Git. Lorsque vous exécutez cette commande, Git affiche une liste des commits effectués, triés du plus récent au plus ancien.
 
-Résultat de l'exécution de la commande :
-
-- Chaque commit est affiché avec des informations telles que l'identifiant du commit (SHA-1), l'auteur, la date et le message du commit.
-- Par exemple :
-  ```
-  commit f7fde4f82d5e8a7574680a8e138e41c05d1e3d6e
-  Author: Votre nom <votre@email.com>
-  Date:   Lun. Sept. 13 10:00:00 2023 +0200
-
-      Ajout de la fonction d'addition
-
-  commit 2cfd3b1e8949a7b894ca57182a3b14db6c0ee43f
-  Author: Autre contributeur <autre@email.com>
-  Date:   Lun. Sept. 12 15:30:00 2023 +0200
-
-      Correction de bug dans la fonction de soustraction
-  ```
-
-- Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
-
-### . Pousser le fichier gestion_eleves.py vers la branche modifier_eleve
+### Pousser le fichier gestion_eleves.py vers la branche modifier_eleve
 
 Pour pousser votre branche nommée "modifier_eleve" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
 
@@ -311,7 +265,7 @@ git push origin modifier_eleve
 
 Cette commande va pousser les commits de votre branche locale "modifier_eleve" vers la branche "modifier_eleve" du dépôt distant appelé "origin". 
 
-### 20. Basculer vers la branche principale 
+### Basculer vers la branche principale 
 
 La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
 
@@ -321,7 +275,7 @@ git checkout main
 
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
 
-### 21. Fudionner la branche "modifier_eleve" avec la branche "main"
+### Fudionner la branche "modifier_eleve" avec la branche "main"
 
 La commande "git merge modifier_eleve" fusionne la branche "modifier_eleve" dans la branche actuelle. Plus précisément, elle incorpore les modifications de la branche "modifier_eleve" dans la branche courante.
 
@@ -334,14 +288,14 @@ Lorsque vous exécutez cette commande, Git examine les modifications entre la br
 **REMARQUE : La fonction modifier_eleve se trouve maintenant dans le ficher "gestion_eleve" dans la branche principale "main"**
 
 
-### 22. Création de la nouvelle branche supprimer_eleve
+### Création de la nouvelle branche supprimer_eleve
 
 ```
 git branch supprimer_eleve
 ```
 La commande "git branch modifier_eleve" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "modifier_eleve". 
 
-### 23. Basculer vers la branche supprimer_eleve
+### Basculer vers la branche supprimer_eleve
 
 La commande "git checkout supprimer_eleve" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "supprimer_eleve".
 
@@ -349,7 +303,7 @@ La commande "git checkout supprimer_eleve" est utilisée pour basculer vers une 
 git checkout supprimer_eleve
 ```
 
-### 24. Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour supprimer un élève
+### Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour supprimer un élève
 
 ```
 def supprimer_élève():
@@ -363,7 +317,7 @@ def supprimer_élève():
 
 La fonction supprimer_élève permet à l'utilisateur d'entrer l'identifiant et le nom d'un nouvel élève, puis le supprimer.
 
-### 25. Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
+### Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
 
 ```
 $ git add .
@@ -371,7 +325,7 @@ $ git add .
 
 La commande `git add .` est utilisée pour ajouter le fichier `gestion_eleves.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 26. Création d'un premier commit pour la fonction `supprimer_élève` 
+### Création d'un premier commit pour la fonction `supprimer_élève` 
 
 Créez un commit pour enregistrer la fonction `supprimer_élève` 
 
@@ -386,21 +340,7 @@ Explication de la commande :
 * `git commit` est la commande principale pour créer un commit.
 * `-m "Ajout de la fonction de supprimer_élève"` est un paramètre qui permet de spécifier le message du commit. Le message doit être placé entre guillemets.
 
-Résultat de l'exécution de la commande :
-
-- Si le commit est créé avec succès, Git affiche des informations sur le commit, telles que l'identifiant unique du commit (SHA-1), l'auteur, la date et le message du commit.
-
-- Par exemple :
-
-```
-[main f7fde4f] Ajout de la fonction d'addition
-1 file changed, 10 insertions(+)
-```
-- Le commit est enregistré dans l'historique du dépôt Git, capturant ainsi les modifications apportées aux fichiers à ce stade.
-
-Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
-
-### 27. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+### Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
 $ git log
@@ -408,27 +348,7 @@ $ git log
 
 La commande `git log` est utilisée pour afficher l'historique des commits dans le dépôt Git. Lorsque vous exécutez cette commande, Git affiche une liste des commits effectués, triés du plus récent au plus ancien.
 
-Résultat de l'exécution de la commande :
-
-- Chaque commit est affiché avec des informations telles que l'identifiant du commit (SHA-1), l'auteur, la date et le message du commit.
-- Par exemple :
-  ```
-  commit f7fde4f82d5e8a7574680a8e138e41c05d1e3d6e
-  Author: Votre nom <votre@email.com>
-  Date:   Lun. Sept. 13 10:00:00 2023 +0200
-
-      Ajout de la fonction d'addition
-
-  commit 2cfd3b1e8949a7b894ca57182a3b14db6c0ee43f
-  Author: Autre contributeur <autre@email.com>
-  Date:   Lun. Sept. 12 15:30:00 2023 +0200
-
-      Correction de bug dans la fonction de soustraction
-  ```
-
-- Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
-
-### . Pousser le fichier gestion_eleves.py vers la branche supprimer_eleve
+### Pousser le fichier gestion_eleves.py vers la branche supprimer_eleve
 
 Pour pousser votre branche nommée "supprimer_eleve" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
 
@@ -438,7 +358,7 @@ git push origin supprimer_eleve
 
 Cette commande va pousser les commits de votre branche locale "supprimer_eleve" vers la branche "supprimer_eleve" du dépôt distant appelé "origin". 
 
-### 28. Basculer vers la branche principale 
+### Basculer vers la branche principale 
 
 La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
 
@@ -448,7 +368,7 @@ git checkout main
 
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
 
-### 29. Fudionner la branche "supprimer_eleve" avec la branche "main"
+### Fudionner la branche "supprimer_eleve" avec la branche "main"
 
 La commande "git merge supprimer_eleve" fusionne la branche "supprimer_eleve" dans la branche actuelle. Plus précisément, elle incorpore les modifications de la branche "supprimer_eleve" dans la branche courante.
 
@@ -460,14 +380,14 @@ Lorsque vous exécutez cette commande, Git examine les modifications entre la br
 
 **REMARQUE : La fonction supprimer_eleve se trouve maintenant dans le ficher "gestion_eleve" dans la branche principale "main"**
 
-### 30. Création de la nouvelle branche afficher_tous_les_eleves
+### Création de la nouvelle branche afficher_tous_les_eleves
 
 ```
 git branch afficher_tous_les_eleves
 ```
 La commande "git branch afficher_tous_les_eleves" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "modifier_eleve". 
 
-### 31. Basculer vers la branche afficher_tous_les_eleves
+### Basculer vers la branche afficher_tous_les_eleves
 
 La commande "git checkout afficher_tous_les_eleves" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "afficher_tous_les_eleves".
 
@@ -475,7 +395,7 @@ La commande "git checkout afficher_tous_les_eleves" est utilisée pour basculer 
 git checkout afficher_tous_les_eleves
 ```
 
-### 32. Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour afficher tous les eleves
+### Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction pour afficher tous les eleves
 
 ```
 élèves = {}
@@ -490,7 +410,7 @@ def afficher_tous_les_élèves():
 
 La fonction afficher_tous_les_élèves permet à l'utilisateur d'entrer l'identifiant et le nom d'un nouvel élève, puis le supprimer.
 
-### 33. Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
+### Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
 
 ```
 $ git add .
@@ -498,7 +418,7 @@ $ git add .
 
 La commande `git add .` est utilisée pour ajouter le fichier `gestion_eleves.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 34. Création d'un premier commit pour la fonction `afficher_tous_les_élèves()` 
+### Création d'un premier commit pour la fonction `afficher_tous_les_élèves()` 
 
 Créez un commit pour enregistrer la fonction `afficher_tous_les_élèves` 
 
@@ -513,21 +433,7 @@ Explication de la commande :
 * `git commit` est la commande principale pour créer un commit.
 * `-m "Ajout de la fonction afficher_tous_les_élèves"` est un paramètre qui permet de spécifier le message du commit. Le message doit être placé entre guillemets.
 
-Résultat de l'exécution de la commande :
-
-- Si le commit est créé avec succès, Git affiche des informations sur le commit, telles que l'identifiant unique du commit (SHA-1), l'auteur, la date et le message du commit.
-
-- Par exemple :
-
-```
-[main f7fde4f] Ajout de la fonction d'addition
-1 file changed, 10 insertions(+)
-```
-- Le commit est enregistré dans l'historique du dépôt Git, capturant ainsi les modifications apportées aux fichiers à ce stade.
-
-Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
-
-### 35. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+### Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
 $ git log
@@ -535,27 +441,7 @@ $ git log
 
 La commande `git log` est utilisée pour afficher l'historique des commits dans le dépôt Git. Lorsque vous exécutez cette commande, Git affiche une liste des commits effectués, triés du plus récent au plus ancien.
 
-Résultat de l'exécution de la commande :
-
-- Chaque commit est affiché avec des informations telles que l'identifiant du commit (SHA-1), l'auteur, la date et le message du commit.
-- Par exemple :
-  ```
-  commit f7fde4f82d5e8a7574680a8e138e41c05d1e3d6e
-  Author: Votre nom <votre@email.com>
-  Date:   Lun. Sept. 13 10:00:00 2023 +0200
-
-      Ajout de la fonction d'addition
-
-  commit 2cfd3b1e8949a7b894ca57182a3b14db6c0ee43f
-  Author: Autre contributeur <autre@email.com>
-  Date:   Lun. Sept. 12 15:30:00 2023 +0200
-
-      Correction de bug dans la fonction de soustraction
-  ```
-
-- Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
-
-### . Pousser le fichier gestion_eleves.py vers la branche afficher_tous_les_élèves
+### Pousser le fichier gestion_eleves.py vers la branche afficher_tous_les_élèves
 
 Pour pousser votre branche nommée "afficher_tous_les_élèves" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
 
@@ -565,7 +451,7 @@ git push origin afficher_tous_les_élèves
 
 Cette commande va pousser les commits de votre branche locale "afficher_tous_les_élèves" vers la branche "afficher_tous_les_élèves" du dépôt distant appelé "origin". 
 
-### 36. Basculer vers la branche principale 
+### Basculer vers la branche principale 
 
 La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
 
@@ -575,7 +461,7 @@ git checkout main
 
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
 
-### 37. Fudionner la branche "afficher_tous_les_eleves" avec la branche "main"
+### Fudionner la branche "afficher_tous_les_eleves" avec la branche "main"
 
 La commande "git merge afficher_tous_les_eleves" fusionne la branche "afficher_tous_les_eleves" dans la branche actuelle. Plus précisément, elle incorpore les modifications de la branche "afficher_tous_les_eleves" dans la branche courante.
 
@@ -587,14 +473,14 @@ Lorsque vous exécutez cette commande, Git examine les modifications entre la br
 
 **REMARQUE : La fonction afficher_tous_les_élèves se trouve maintenant dans le ficher "gestion_eleve" dans la branche principale "main"**
 
-### 38. Création de la nouvelle branche gestion_eleves
+### Création de la nouvelle branche gestion_eleves
 
 ```
 git branch gestion_eleves
 ```
 La commande "git branch gestion_eleves" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "git branch gestion_eleves". 
 
-### 39. Basculer vers la branche gestion_eleves
+### Basculer vers la branche gestion_eleves
 
 La commande "git checkout gestion_eleves" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "gestion_eleves".
 
@@ -602,7 +488,7 @@ La commande "git checkout gestion_eleves" est utilisée pour basculer vers une b
 git checkout gestion_eleves
 ```
 
-### 40. Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction principale 
+### Ouvrez le fichier `gestion_eleves.py` et ajoutez la fonction principale 
 
 ```
 def gestion_eleves():
@@ -636,7 +522,7 @@ if __name__ == "__main__":
 
 La fonction gestion_eleves permet à l'utilisateur de selectionner une option afin d'executer les fonctions de gestion. 
 
-### 41. Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
+### Ajoutez le fichier `gestion_eleves.py` au suivi de Git en utilisant la commande suivante 
 
 ```
 $ git add .
@@ -644,7 +530,7 @@ $ git add .
 
 La commande `git add .` est utilisée pour ajouter le fichier `gestion_eleves.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
 
-### 42. Création un commit pour la fonction `gestion_eleves()` 
+### Création un commit pour la fonction `gestion_eleves()` 
 
 Créez un commit pour enregistrer la fonction `gestion_eleves()` 
 
@@ -659,21 +545,7 @@ Explication de la commande :
 * `git commit` est la commande principale pour créer un commit.
 * `-m "Ajout de la fonction gestion_eleves()"` est un paramètre qui permet de spécifier le message du commit. Le message doit être placé entre guillemets.
 
-Résultat de l'exécution de la commande :
-
-- Si le commit est créé avec succès, Git affiche des informations sur le commit, telles que l'identifiant unique du commit (SHA-1), l'auteur, la date et le message du commit.
-
-- Par exemple :
-
-```
-[main f7fde4f] Ajout de la fonction d'addition
-1 file changed, 10 insertions(+)
-```
-- Le commit est enregistré dans l'historique du dépôt Git, capturant ainsi les modifications apportées aux fichiers à ce stade.
-
-Une fois le commit créé, les modifications apportées aux fichiers sont enregistrées de manière permanente dans le dépôt Git. 
-
-### 43. Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
+### Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
 $ git log
@@ -681,27 +553,7 @@ $ git log
 
 La commande `git log` est utilisée pour afficher l'historique des commits dans le dépôt Git. Lorsque vous exécutez cette commande, Git affiche une liste des commits effectués, triés du plus récent au plus ancien.
 
-Résultat de l'exécution de la commande :
-
-- Chaque commit est affiché avec des informations telles que l'identifiant du commit (SHA-1), l'auteur, la date et le message du commit.
-- Par exemple :
-  ```
-  commit f7fde4f82d5e8a7574680a8e138e41c05d1e3d6e
-  Author: Votre nom <votre@email.com>
-  Date:   Lun. Sept. 13 10:00:00 2023 +0200
-
-      Ajout de la fonction d'addition
-
-  commit 2cfd3b1e8949a7b894ca57182a3b14db6c0ee43f
-  Author: Autre contributeur <autre@email.com>
-  Date:   Lun. Sept. 12 15:30:00 2023 +0200
-
-      Correction de bug dans la fonction de soustraction
-  ```
-
-- Chaque commit est identifié par son identifiant unique (SHA-1). Vous pouvez utiliser cet identifiant pour référencer spécifiquement un commit.
-
-### . Pousser le fichier gestion_eleves.py vers la branche gestion_eleves
+### Pousser le fichier gestion_eleves.py vers la branche gestion_eleves
 
 Pour pousser votre branche nommée "gestion_eleves" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
 
@@ -711,7 +563,7 @@ git push origin gestion_eleves
 
 Cette commande va pousser les commits de votre branche locale "gestion_eleves" vers la branche "gestion_eleves" du dépôt distant appelé "origin". 
 
-### 44. Basculer vers la branche principale 
+### Basculer vers la branche principale 
 
 La commande "git checkout main" est utilisée pour basculer vers la branche principale (ou branche maître) dans un référentiel Git. La branche principale est généralement utilisée pour représenter l'état stable du projet.
 
@@ -721,7 +573,7 @@ git checkout main
 
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche principale. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "main". 
 
-### 45. Fudionner la branche "gestion_eleves" avec la branche "main"
+### Fudionner la branche "gestion_eleves" avec la branche "main"
 
 La commande "git merge gestion_eleves" fusionne la branche "gestion_eleves" dans la branche actuelle. Plus précisément, elle incorpore les modifications de la branche "gestion_eleves" dans la branche courante.
 
@@ -733,7 +585,7 @@ Lorsque vous exécutez cette commande, Git examine les modifications entre la br
 
 **REMARQUE : La fonction afficher_tous_les_élèves se trouve maintenant dans le ficher "gestion_eleve" dans la branche principale "main"**
 
-### 47. Vérification du dépot et des commits sur [GitHub](https://github.com/) 
+### Vérification du dépot et des commits sur [GitHub](https://github.com/) 
 
 Pour vérifier les commits dans un dépôt GitHub, vous pouvez suivre les étapes suivantes :
 
