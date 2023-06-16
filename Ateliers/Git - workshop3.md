@@ -72,7 +72,7 @@ Lorsque vous exécutez cette commande, Git compare les commits locaux que vous a
 Une branche est une ligne de développement isolée qui permet aux utilisateurs de travailler sur des fonctionnalités, des correctifs ou des expérimentations sans affecter la branche principale du projet, généralement appelée "branche principale" ou "branche maître" (par convention, "master" en anglais).
 
 ```
-git branch convertir
+$ git branch convertir
 ```
 La commande "git branch convertir" est utilisée pour créer une nouvelle branche dans un référentiel Git avec le nom "convertir". 
 
@@ -81,7 +81,7 @@ La commande "git branch convertir" est utilisée pour créer une nouvelle branch
 La commande "git checkout convertir" est utilisée pour basculer vers une branche spécifique dans un référentiel Git. Dans ce cas, la branche spécifique est "convertir".
 
 ```
-git checkout convertir
+$ git checkout convertir
 ```
 Lorsque vous exécutez cette commande, Git met à jour votre répertoire de travail pour refléter l'état de la branche spécifiée. Cela signifie que les fichiers dans votre répertoire de travail seront modifiés pour correspondre à l'état de la branche "convertir". Les modifications non validées dans votre branche actuelle peuvent être perdues si elles ne sont pas sauvegardées ou validées avant de passer à une autre branche.
 
@@ -163,7 +163,7 @@ Résultat de l'exécution de la commande :
 Pour pousser votre branche nommée "convertir" vers le dépôt distant nommé "origin" dans Git, vous pouvez utiliser la commande suivante :
 
 ```
-git push origin convertir
+$ git push origin convertir
 ```
 
 Cette commande va pousser les commits de votre branche locale "convertir" vers la branche "convertir" du dépôt distant appelé "origin". 
