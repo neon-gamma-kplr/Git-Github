@@ -9,6 +9,9 @@ Vous découvrirez comment utiliser les commandes:
 - `git commit` pour créer un instantané des modifications
 - `git push` pour pousser les commits vers un dépôt distant.
 
+## Descriptif et deroulé de l'exercice:
+-----
+
 ## Instructions
 
 ### Créer un nouveau repository Github Vide
@@ -370,3 +373,9 @@ Pour vérifier les commits dans un dépôt GitHub, vous pouvez suivre les étape
 En utilisant l'interface GitHub, vous pouvez facilement visualiser l'historique des commits, examiner les modifications apportées aux fichiers et les commentaires associés à chaque commit. Cela vous permet de suivre l'évolution du dépôt et de comprendre les changements qui ont été effectués au fil du temps.
 
 Cela conclut l'atelier d'initialisation Git avec l'ajout et le commit de chaque fonction de la calculatrice séparément. 
+
+# Recapitulatif:
+Dans cet exercice:
+- Vous avez vu comment xxxxxx.. etc.
+- Vous êtes à present capables de xxxxxxxx
+
