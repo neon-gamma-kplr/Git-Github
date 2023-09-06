@@ -31,7 +31,7 @@ Ouvrez votre terminal.
 Configurez votre nom d'utilisateur en utilisant la commande suivante :
 
 ```
-$ git config --global user.name "Votre nom d'utilisateur"
+git config --global user.name "Votre nom d'utilisateur"
 ```
      
 La commande git config --global user.name "Votre nom d'utilisateur" vous permet de définir votre nom d'utilisateur. Remplacez "Votre nom d'utilisateur" par votre nom d'utilisateur réel. 
@@ -39,7 +39,7 @@ La commande git config --global user.name "Votre nom d'utilisateur" vous permet 
 Configurez votre adresse e-mail en utilisant la commande suivante :
 
 ```
-$ git config --global user.email "Votre adresse e-mail"
+git config --global user.email "Votre adresse e-mail"
 ```
 
 La commande git config --global user.email "Votre adresse e-mail" vous permet de définir votre adresse e-mail. Remplacez "Votre adresse e-mail" par votre adresse e-mail réelle.
@@ -53,7 +53,7 @@ Vous pouvez utiliser la commande `git config --global --list` pour afficher la l
 Exécutez la commande suivante dans votre terminal :
 
 ```
-$ git config --global --list
+git config --global --list
 ```
 
 Cela affichera une liste des paramètres de configuration globale, y compris votre nom d'utilisateur et votre adresse e-mail, si vous les avez configurés correctement.
@@ -65,7 +65,7 @@ Assurez-vous de rechercher les lignes contenant **`user.name` et `user.email`** 
 Créez un fichier Python vide dans le dossier :
 
 ```
-$ touch calculatrice.py
+touch calculatrice.py
 ```
 
 ### Ouvrez le fichier `calculatrice.py` et ajoutez les fonctions de calculatrice  
@@ -78,7 +78,7 @@ def addition(a, b):
 ### Ajoutez le fichier `calculatrice.py` au suivi de Git en utilisant la commande suivante 
 
 ```
-$ git add .
+git add .
 ```
 
 La commande `git add .` est utilisée pour ajouter le fichier `calculatrice.py` au suivi de Git. Cela signifie que Git commencera à suivre les modifications apportées à ce fichier et le prendra en compte lors des futurs commits.
@@ -88,7 +88,7 @@ La commande `git add .` est utilisée pour ajouter le fichier `calculatrice.py` 
 Créez un commit pour enregistrer la fonction `addition` 
 
 ```
-$ git commit -m "Ajout de la fonction d'addition"
+git commit -m "Ajout de la fonction d'addition"
 ```
 
 La commande `git commit -m "Ajout de la fonction d'addition"` est utilisée pour créer un nouveau commit dans le dépôt Git. Un commit est une capture instantanée des modifications apportées aux fichiers suivis par Git.
@@ -115,7 +115,7 @@ Une fois le commit créé, les modifications apportées aux fichiers sont enregi
 ### Afficher l'historique des commits et vérifier que votre commit a été enregistré avec succès
 
 ```
-$ git log
+git log
 ```
 
 La commande `git log` est utilisée pour afficher l'historique des commits dans le dépôt Git. Lorsque vous exécutez cette commande, Git affiche une liste des commits effectués, triés du plus récent au plus ancien.
@@ -145,7 +145,7 @@ Résultat de l'exécution de la commande :
 La commande "git push" est utilisée pour pousser (envoyer) les commits locaux vers un référentiel distant, généralement situé sur une plateforme de gestion de code telle que GitHub, GitLab ou Bitbucket.
 
 ```
-$ git push 
+git push 
 ```
 
 Lorsque vous exécutez cette commande, Git compare les commits locaux que vous avez effectués avec ceux présents dans le référentiel distant. Il envoie uniquement les nouveaux commits locaux qui n'existent pas encore dans le référentiel distant
