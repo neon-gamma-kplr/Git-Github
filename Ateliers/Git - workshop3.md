@@ -1,4 +1,4 @@
-# GIT : Gérer un projet avec Git
+# GIT : Collaborer avec Git
 
 ## Contexte
 Vous travaillez sur un projet web avec votre binôme. Vous avez créé un dépôt Git sur la plateforme GitHub et vous êtes prêt à commencer à travailler dessus. Vous allez utiliser Git pour gérer les versions de votre code et collaborer avec votre binôme.
